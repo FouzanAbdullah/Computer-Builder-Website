@@ -1,20 +1,12 @@
-<!--
-    Fouzan Abdullah
-    6840797
--->
 <html>
 <title>Login</title>
 <head>
   <meta name="viewport" content="width= device-width, initial-scale = 1.0">
   <script type="module" src="data.json">
-    // Import the functions you need from the SDKs you need
+    
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    
     const firebaseConfig = {
       apiKey: "AIzaSyDLIYOvAhqlZ72w346w9xa-j9Dk6FJGsO4",
       authDomain: "stage2-3p94.firebaseapp.com",
@@ -30,10 +22,9 @@
 var database = firebase.database();
 
 
-// Convert the JSON data to an object
+
 var jsonData = JSON.parse(JSON.stringify(data));
 
-// Write the data to Firebase using the `database.ref().push()` method
 database.ref('path/to/data').push(jsonData)
   .then(function() {
     console.log('JSON data saved successfully!');
