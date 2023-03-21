@@ -229,7 +229,29 @@ a.nav6:link, a.nav6:visited {
     color: #676d77;
 }
 
-a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hover {
+a.nav7:link, a.nav7:visited {
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 22px;
+    margin: 0 14px 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url(src/my-computer.png) no-repeat left;
+    color: #676d77;
+}
+
+a.nav8:link, a.nav8:visited {
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 22px;
+    margin: 0 14px 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url(src/featured-computer.png) no-repeat left;
+    color: #676d77;
+}
+
+a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hover, a.nav7:hover, a.nav8:hover {
     color: #333333;
 }
 
