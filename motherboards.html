@@ -1,0 +1,134 @@
+<html>
+    <head>
+    <title>Motherboard</title>
+    <script>
+      const motherboards = [
+  {
+    title: "ASUS ROG Strix Z590-E Gaming WiFi 6E",
+    description: "ATX, Intel LGA 1200, 11th Gen Intel Core, PCIe 4.0, WiFi 6E, 2.5Gb LAN, Thunderbolt 4, SATA 6Gb/s, USB 3.2 Gen 2x2 Type-C, HDMI 2.0/DP, Aura Sync RGB",
+    price: "$399.99",
+    image: "https://www.asus.com/media/global/products/hEYX4PT4OVp4I4sH/P_setting_fff_1_90_end_600.png"
+  },
+  {
+    title: "MSI MPG B550 Gaming Edge WiFi",
+    description: "ATX, AMD AM4, DDR4, PCIe 4.0, WiFi 6, M.2, USB 3.2 Gen 2, HDMI/DP, Mystic Light RGB",
+    price: "$169.99",
+    image: "https://asset.msi.com/resize/image/global/product/product_6_20200616110106_5ee883ca7eb3a.png62405b38c58fe0f07fcef2367d8a9ba1/600.png"
+  },
+  {
+    title: "GIGABYTE B450 AORUS M",
+    description: "Micro ATX, AMD Ryzen, AM4, PCIe Gen3, Dual M.2, RGB Fusion 2.0",
+    price: "$89.99",
+    image: "https://www.gigabyte.com/FileUpload/Global/KeyFeature/1335/innergigabyte_b450-aorus-m-rev-10_gallery01.png"
+  }
+];
+
+const motherboardList = document.getElementById("motherboard-list");
+const motherboardTemplate = document.getElementById("motherboard-template");
+
+// Loop through motherboards and create a new motherboard element for each
+motherboards.forEach(motherboard => {
+  // Clone the motherboard template
+  const newMotherboard = motherboardTemplate.content.cloneNode(true);
+
+  // Set the title, description, price, and image of the motherboard
+  newMotherboard.querySelector(".motherboard-title").textContent = motherboard.title;
+  newMotherboard.querySelector(".motherboard-description").textContent = motherboard.description;
+  newMotherboard.querySelector(".motherboard-price").textContent = motherboard.price;
+  newMotherboard.querySelector(".motherboard-image").src = motherboard.image;
+
+  // Add an event listener to the Add to Cart button
+  newMotherboard.querySelector(".add-to-cart").addEventListener("click", () => {
+    // Add the motherboard to the cart
+    console.log(`Added ${motherboard.title} to cart`);
+  });
+
+  // Add the new motherboard element to the motherboard list
+  motherboardList.appendChild(newMotherboard);
+});
+
+    </script>
+    <style>
+      /* Style for motherboard list container */
+#motherboard-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for motherboard container */
+.motherboard {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* Style for motherboard image */
+.motherboard-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Style for motherboard description */
+.motherboard-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Style for motherboard title */
+.motherboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for motherboard price */
+.motherboard-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for Add to Cart button */
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #3e8e41;
+}
+
+    </style>
+    </head>
+  <body>
+<div id="motherboard-list"></div>
+
+<!-- Motherboard Template -->
+<template id="motherboard-template">
+  <div class="motherboard">
+    <img class="motherboard-image" src="" alt="">
+    <div class="motherboard-description">
+      <h2 class="motherboard-title"></h2>
+      <p class="motherboard-price"></p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</template>
+</body>
+</html>
