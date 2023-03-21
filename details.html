@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {		
+                loadDetail();
+            });
+
+            var loadDetail = function() {
+                var imageLocation = document.getElementById("mainImage");
+                var imageTitleLocation = document.getElementById("mainImageTitle");
+                var description = document.getElementById("desc");
+                var price = document.getElementById("price");
+
+                //get query parameter
+                let params = (new URL(document.location)).searchParams;
+                let id = params.get("id");
+
+                //get the object from url parameter from json data
+                var dataIn = JSON.stringify(data);
+                var jsonData = JSON.parse(dataIn);
+                var targetObject = "";
+
+                for (var i = 0; i < jsonData.length; i++) {
+                    if(id == jsonData[i].id) {
+                        targetObject = jsonData[i];
+                        break;
+                    }
+                }
+
+                var image = document.createElement("IMG");
+                image.setAttribute("src", targetObject.image);
+                image.setAttribute("height", "200vh");
+                image.setAttribute("width", "200vw");
+                image.setAttribute("alt", targetObject.name);
+
+                var imageName = document.createElement("h1");
+                imageName.innerHTML = targetObject.name;
+                imageName.classList.add("text-white");
+
+                var imageDescription = document.createElement("p");
+                imageDescription.innerHTML = targetObject.description;
+                imageDescription.classList.add("text-white");
+
+                //if the sale price is not 0 or the same as the actual price then put sale
+                if(targetObject.price != targetObject.salePrice && targetObject.salePrice != 0) {
+                    var imageRealPrice = document.createElement("span");
+                    var imageSalePrice = document.createElement("span");
+                    imageRealPrice.classList.add("reduce");
+                    imageRealPrice.innerHTML = targetObject.price + "$";
+                    imageSalePrice.classList.add("price");
+                    imageSalePrice.innerHTML = " " + targetObject.salePrice + "$";
+                    price.appendChild(imageRealPrice);
+                    price.appendChild(imageSalePrice);
+                } else {  
+                    var imagePrice = document.createElement("p");
+                    imagePrice.innerHTML = targetObject.price;
+                    imagePrice.classList.add("text-white");
+                    price.appendChild(imagePrice);
+                }
+
+                imageLocation.appendChild(image);
+                imageTitleLocation.appendChild(imageName);
+                description.appendChild(imageDescription);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main_container">
+            <div id="main_content">
+                <div id="menu_tab">
+                <div class="left_menu_corner"></div>
+                <ul class="menu">
+                <li><a href="index.html" class="nav1">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="nav2">Products</a></li>
+                <li class="divider"></li>   
+                <li><a href="#" class="nav3">Specials</a></li>
+                <li class="divider"></li>
+                <li><a href="login.html" class="nav4">My account</a></li>
+                <li class="divider"></li>
+                <li><a href="register.html" class="nav4">Sign Up</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="nav5">Shipping</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html" class="nav6">Contact Us</a></li>
+                <li class="divider"></li>
+
+                </ul>
+                <div class="right_menu_corner"></div>
+            </div>
+            <!-- end of menu tab -->
+            
+            <div id="mainImage" class="text-center">
+            </div>
+
+            <div id="mainImageTitle" class="text-center">
+            </div>
+
+            <div id="mainImageDescription" class="text-left border rounded">
+                <div class="row">
+                    <div class="col-10" id="desc"></div>
+                    <div class="col-2" id="price"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
