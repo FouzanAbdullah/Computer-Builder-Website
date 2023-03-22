@@ -5,21 +5,6 @@
         <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-        <script>
-            const slideValue = document.querySelector("span");
-            const inputSlider = document.querySelector("input");
-
-            inputSlider.oninput = (()=>{
-            let value = inputSlider.value;
-            slideValue.textContent = value;
-            slideValue.style.left = (value) + "%";
-            slideValue.classList.add("show");
-            });
-
-            inputSlider.onblur = (()=>{
-            slideValue.classList.remove("show");
-            });
-        </script>
 
         <style>
             .slider {
@@ -59,9 +44,53 @@
 
             .row {
                 padding: 10px;
+                padding-top: 15px;
             }
 
             button {
+                width: 100%;
+            }
+
+            image {
+                float: right;
+            }
+
+            h4 {
+                width: 80%;
+                margin: 0px auto;
+                padding-top: 5px;
+                float:left;
+            }
+
+            .imageholder {
+                width: 20%;
+                margin: 0px auto;
+                padding: 0px;
+                float:left;
+            }
+
+            .component-row {
+                border: 2px solid white;
+                margin-bottom: 4px;
+            }
+
+            .btn {
+                font-size: 19px;
+            }
+
+            h5 {
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+
+            .section {
+                border: 2px solid black;
+                padding: 5px;
+                margin-bottom: 3px;
+            }
+
+            h7 {
+                display: block;
                 width: 100%;
             }
         </style>
@@ -106,6 +135,101 @@
                 </div>
                 <div class="col-3">
                     <button type="button" class="btn btn-success btn-lg btn-block">Save Build</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-9">
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                        </div>
+                        <div class="col-8">
+                            <h4 class="text-white">MSI GeForce RTX 4090 24GB</h4>
+                            <div class="imageholder">
+                                <img src="src/nvidiartx3060.jpg" alt="" width="45px" height="45px" class="map" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose CPU</button>
+                        </div>
+                        <div class="col-8">
+
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Motherboard</button>
+                        </div>
+                        <div class="col-8">
+
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Storage</button>
+                        </div>
+                        <div class="col-8">
+
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose PSU</button>
+                        </div>
+                        <div class="col-8">
+
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                        </div>
+                        <div class="col-8">
+                            <h4 class="text-white">NZXT H510 Compact ATX</h4>
+                            <div class="imageholder">
+                                <img src="src/nzxt h510.jpg" alt="" width="45px" height="45px" class="map" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                        </div>
+                        <div class="col-8">
+                            <h4 class="text-white">Windows 11 Pro Edition</h4>
+                            <div class="imageholder">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-row row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Peripherals</button>
+                        </div>
+                        <div class="col-8">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="section">
+                        <h3 class="text-white text-center"><u>PC Build Status</u></h3>
+                        <h7 class="text-white">Estimated price: 567$</h7>
+                        <h7 class="text-white">Compatibility: <font color="green">No issues</font></h7>
+                        <h7 class="text-white">Estimated wattage: 120W</h7>
+                    </div>
+                    <div class="section">
+                        <h3 class="text-white text-center"><u>Estimated Benchmarks</u></h3>
+                        <h7 class="text-white">Apex Legends: 130fps</h7>
+                        <h7 class="text-white">League of Legends: 193fps</h7>
+                        <h7 class="text-white">Valorant: 178fps</h7>
+                        <h7 class="text-white">CS:GO: 175fps</h7>
+                        <h7 class="text-white">Minecraft: 144fps</h7>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Add Game</button>
+                    </div>
                 </div>
             </div>
         </div>
