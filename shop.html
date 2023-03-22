@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motherboard List</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <style>
     /* Style for motherboard list container */
     #motherboard-list {
@@ -20,7 +21,7 @@
       width: calc(33.33% - 10px);
       margin-bottom: 20px;
       padding: 10px;
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 2px 6px rgba(82, 56, 229, 0.3);
       border-radius: 5px;
     }
 
@@ -37,6 +38,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      color:rgba(255, 255, 255, 0.3)
     }
 
     /* Style for motherboard title */
@@ -70,15 +72,40 @@
       background-color: #3e8e41;
     }
   </style>
+  
 </head>
 <body>
-  <header>
-    <h1>Motherboard List</h1>
-  </header>
   <main>
+    <div id="main_container">
+      <div id="main_content">
+        <div id="menu_tab">
+          <div class="left_menu_corner"></div>
+          <ul class="menu">
+          <li><a href="index.html" class="nav1">Home</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="nav2">Products</a></li>
+          <li class="divider"></li>
+          <li><a href="build.html" class="nav7">Build a PC</a></li>
+          <li class="divider"></li>
+          <li><a href="featured.html" class="nav8">Featured</a></li>
+          <li class="divider"></li>   
+          <li><a href="#" class="nav3">Specials</a></li>
+          <li class="divider"></li>
+          <li><a href="login.html" class="nav4">My account</a></li>
+          <li class="divider"></li>
+          <li><a href="register.html" class="nav4">Sign Up</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="nav5">Shipping</a></li>
+          <li class="divider"></li>
+          <li><a href="contact.html" class="nav6">Contact Us</a></li>
+          <li class="divider"></li>
+
+          </ul>
+          <div class="right_menu_corner"></div>
+      </div>
     <div id="motherboard-list">
       <div class="motherboard">
-        <img class="motherboard-image" src="https://i.imgur.com/UjKzoE8.png" alt="Motherboard Image">
+        <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
         <div class="motherboard-description">
           <h2 class="motherboard-title">ASUS ROG Maximus XIII Hero</h2>
           <p class="motherboard-price">$499.99</p>
@@ -86,7 +113,7 @@
         </div>
       </div>
       <div class="motherboard">
-        <img class="motherboard-image" src="https://i.imgur.com/pBkfgmB.png" alt="Motherboard Image">
+        <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
         <div class="motherboard-description">
           <h2 class="motherboard-title">Gigabyte AORUS Z590 Master</h2>
           <p class="motherboard-price">$439.99</p>
@@ -94,7 +121,7 @@
         </div>
       </div>
       <div class="motherboard">
-        <img class="motherboard-image" src="https://i.imgur.com/DFV7WAg.png" alt="Motherboard Image">
+        <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
         <div class="motherboard-description">
           <h2 class="motherboard-title">MSI MEG Z590 ACE</h2>
         <p class="motherboard-price">$539.99</p>
@@ -102,7 +129,7 @@
       </div>
     </div>
     <div class="motherboard">
-      <img class="motherboard-image" src="https://i.imgur.com/OWBjKkF.png" alt="Motherboard Image">
+      <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
       <div class="motherboard-description">
         <h2 class="motherboard-title">ASRock Z590 Taichi</h2>
         <p class="motherboard-price">$329.99</p>
@@ -110,7 +137,7 @@
       </div>
     </div>
     <div class="motherboard">
-      <img class="motherboard-image" src="https://i.imgur.com/hTzfT8T.png" alt="Motherboard Image">
+      <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
       <div class="motherboard-description">
         <h2 class="motherboard-title">EVGA Z590 FTW WiFi</h2>
         <p class="motherboard-price">$429.99</p>
@@ -118,7 +145,7 @@
       </div>
     </div>
     <div class="motherboard">
-      <img class="motherboard-image" src="https://i.imgur.com/f1dxSIO.png" alt="Motherboard Image">
+      <img class="motherboard-image" src="src/ASUSROGMAXIMUS.png" alt="Motherboard Image">
       <div class="motherboard-description">
         <h2 class="motherboard-title">ASUS Prime Z590-P</h2>
         <p class="motherboard-price">$179.99</p>
