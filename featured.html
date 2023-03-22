@@ -16,7 +16,7 @@
                 
                 for(var i = 0; i < cards.length; i++) {
                     cards[i].addEventListener("click", function() {
-                        window.location = "";
+                        window.location = "build.html";
                     });
                 }
             }
@@ -30,6 +30,7 @@
                 padding-left: 40px;
                 background: #fcfcfc;
                 border-radius: 20px;
+                margin-bottom: 8px;
                 display: flex;
                 align-items: center;
                 box-shadow: 0px 15px 40px #7E6D5766;
@@ -73,6 +74,29 @@
 
             .card {
                 margin-right: 8px;
+                margin-top: 8px;
+            }
+
+            label {
+                color: white;
+                float: left;
+            }
+
+            input {
+                margin-left: 8px;
+                margin-top: 8px;
+                float: left;
+                margin-bottom: 8px;
+            }
+
+            select, label {
+                margin-left: 8px;
+                margin-top: 8px;
+                display: block;   
+            }
+
+            button {
+                margin-bottom: 8px;
             }
         </style>
     </head>
@@ -106,11 +130,11 @@
             </div>
             <!-- end of menu tab -->
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-center">
                     <h1 class="text-center text-white">Filters</h1>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Apply Filters</button>
                     <div class="slider">
                         <input type="range" min="200" max="10000" value="100" oninput="rangeValue.innerText = this.value">
-                        
                     </div>
                     <div class ="row">
                         <div class="col-5">
@@ -120,9 +144,110 @@
                             <p id="rangeValue" class="text-white">200</p>
                         </div>
                     </div>
+                    <select id="cpuSelect" name="cpuSelect">
+                        <option  disabled selected>Select CPU</option>
+                        <option>Intel</option>
+                        <option>AMD</option>
+                    </select>
+                    <select id="overclockable" name="overclockable">
+                        <option  disabled selected>Overclockable</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                    <select id="case" name="case">
+                        <option  disabled selected>Case</option>
+                        <option>Micro ATX</option>
+                        <option>ATX</option>
+                    </select>
+                    <label for="start text-white">Date created:</label>
+                    <input type="date" id="start" name="start">
+
+                    <select id="gpu" name="gpu">
+                        <option  disabled selected>GPU</option>
+                        <option>Nvidia</option>
+                        <option>AMD</option>
+                        <option>30 series</option>
+                        <option>40 series</option>
+                    </select>
                 </div>
                 <!-- end of left content -->
                 <div class="col-9">
+                    <div class="row">
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">AMD5 Upgrade</h5>
+                            <p class="card-text">My epic Fortnite build 😎</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 7 7700X</li>
+                            <li class="list-group-item">GeForce RTX 4080</li>
+                            <li class="list-group-item"><b>Cost: 899.00$</b></li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">PC for gaming/homework</h5>
+                            <p class="card-text">A reliable cheap PC to let me do my homework and stuff</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 7 3700X</li>
+                            <li class="list-group-item">Radeon RX 6700 XT</li>
+                            <li class="list-group-item"><b>Cost: 2616.52$</b></li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Quiet White AMD PC 2023</h5>
+                            <p class="card-text">My pc build that lets me play a lot of games</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 9 7950X3D</li>
+                            <li class="list-group-item">GeForce RTX 4090</li>
+                            <li class="list-group-item"><b>Cost: 4900.92$</b></li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">AMD5 Upgrade</h5>
+                            <p class="card-text">My epic Fortnite build 😎</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 7 7700X</li>
+                            <li class="list-group-item">GeForce RTX 4080</li>
+                            <li class="list-group-item"><b>Cost: 899.00$</b></li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">PC for gaming/homework</h5>
+                            <p class="card-text">A reliable cheap PC to let me do my homework and stuff</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 7 3700X</li>
+                            <li class="list-group-item">Radeon RX 6700 XT</li>
+                            <li class="list-group-item"><b>Cost: 2616.52$</b></li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="src/build-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Quiet White AMD PC 2023</h5>
+                            <p class="card-text">My pc build that lets me play a lot of games</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">AMD Ryzen 9 7950X3D</li>
+                            <li class="list-group-item">GeForce RTX 4090</li>
+                            <li class="list-group-item"><b>Cost: 4900.92$</b></li>
+                            </ul>
+                        </div>  
+                    </div>
                     <div class="row">
                         <div class="card" style="width: 15rem;">
                             <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
