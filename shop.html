@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motherboard List</title>
+  <style>
+    /* Style for motherboard list container */
+    #motherboard-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Style for motherboard container */
+    .motherboard {
+      display: flex;
+      flex-direction: column;
+      width: calc(33.33% - 10px);
+      margin-bottom: 20px;
+      padding: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    /* Style for motherboard image */
+    .motherboard-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    /* Style for motherboard description */
+    .motherboard-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    /* Style for motherboard title */
+    .motherboard-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Style for motherboard price */
+    .motherboard-price {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Style for Add to Cart button */
+    .add-to-cart {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Motherboard List</h1>
+  </header>
+  <main>
+    <div id="motherboard-list">
+      <div class="motherboard">
+        <img class="motherboard-image" src="https://i.imgur.com/UjKzoE8.png" alt="Motherboard Image">
+        <div class="motherboard-description">
+          <h2 class="motherboard-title">ASUS ROG Maximus XIII Hero</h2>
+          <p class="motherboard-price">$499.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="motherboard">
+        <img class="motherboard-image" src="https://i.imgur.com/pBkfgmB.png" alt="Motherboard Image">
+        <div class="motherboard-description">
+          <h2 class="motherboard-title">Gigabyte AORUS Z590 Master</h2>
+          <p class="motherboard-price">$439.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="motherboard">
+        <img class="motherboard-image" src="https://i.imgur.com/DFV7WAg.png" alt="Motherboard Image">
+        <div class="motherboard-description">
+          <h2 class="motherboard-title">MSI MEG Z590 ACE</h2>
+        <p class="motherboard-price">$539.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="motherboard">
+      <img class="motherboard-image" src="https://i.imgur.com/OWBjKkF.png" alt="Motherboard Image">
+      <div class="motherboard-description">
+        <h2 class="motherboard-title">ASRock Z590 Taichi</h2>
+        <p class="motherboard-price">$329.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="motherboard">
+      <img class="motherboard-image" src="https://i.imgur.com/hTzfT8T.png" alt="Motherboard Image">
+      <div class="motherboard-description">
+        <h2 class="motherboard-title">EVGA Z590 FTW WiFi</h2>
+        <p class="motherboard-price">$429.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="motherboard">
+      <img class="motherboard-image" src="https://i.imgur.com/f1dxSIO.png" alt="Motherboard Image">
+      <div class="motherboard-description">
+        <h2 class="motherboard-title">ASUS Prime Z590-P</h2>
+        <p class="motherboard-price">$179.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
