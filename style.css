@@ -97,7 +97,7 @@ details {
 #menu_tab {
     width: 1000px;
     height: 50px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .left_menu_corner {
@@ -233,7 +233,7 @@ a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hov
     width: 196px;
     height: 30px;
     margin: 5px 0 0 0;
-    background: url(src/menu_title_bg.gif) no-repeat center;
+    background: maroon no-repeat center;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
@@ -369,9 +369,9 @@ a.join {
     _margin: 0 0 0 6px;
     line-height: 33px;
     font-size: 12px;
-    color: #847676;
+    color: #ffffff;
     font-weight: bold;
-    background: url(src/bar_bg.gif) no-repeat center;
+    background: maroon no-repeat center;
 }
 
 
