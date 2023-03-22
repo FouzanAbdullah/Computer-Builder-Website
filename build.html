@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <script>
+            const slideValue = document.querySelector("span");
+            const inputSlider = document.querySelector("input");
+
+            inputSlider.oninput = (()=>{
+            let value = inputSlider.value;
+            slideValue.textContent = value;
+            slideValue.style.left = (value) + "%";
+            slideValue.classList.add("show");
+            });
+
+            inputSlider.onblur = (()=>{
+            slideValue.classList.remove("show");
+            });
+        </script>
+
+        <style>
+            .slider {
+                height: 10px;
+                padding: 20px;
+                padding-left: 40px;
+                background: #fcfcfc;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0px 15px 40px #7E6D5766;
+            }
+            .slider p {
+                font-family: Open Sans;
+                padding-left: 30px;
+                color: black;
+            }
+            .slider input[type="range"] {
+                -webkit-appearance:none !important;
+                height: 2px;
+                background: black;
+                border: none;
+                outline: none;
+            }
+            .slider input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none !important;
+                width: 15px;
+                height:15px;
+                background: black;
+                border: 2px solid black;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .slider input[type="range"]::-webkit-slider-thumb:hover {
+                background: black;
+            }
+
+            .row {
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main_container">
+            <div id="main_content">
+                <div id="menu_tab">
+                <div class="left_menu_corner"></div>
+                <ul class="menu">
+                <li><a href="index.html" class="nav1">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="nav2">Products</a></li>
+                <li class="divider"></li>
+                <li><a href="build.html" class="nav7">Build a PC</a></li>
+                <li class="divider"></li>
+                <li><a href="featured.html" class="nav8">Featured</a></li>
+                <li class="divider"></li>   
+                <li><a href="#" class="nav3">Specials</a></li>
+                <li class="divider"></li>
+                <li><a href="login.html" class="nav4">My account</a></li>
+                <li class="divider"></li>
+                <li><a href="register.html" class="nav4">Sign Up</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="nav5">Shipping</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html" class="nav6">Contact Us</a></li>
+                <li class="divider"></li>
+        
+                </ul>
+                <div class="right_menu_corner"></div>
+            </div>
+            <!-- end of menu tab -->
+
+            <!-- header row to display username and load/save-->
+            <div class="row">
+                <div class="col-7">
+                    <h3 class="text-white">[User's name] PC build</h3>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-light btn-lg btn-block">Load</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-success btn-lg btn-block">Save Build</button>
+                </div>
+            </div>
+        </div>
+        <!-- end of main_container -->
+    </body>
+</html>
