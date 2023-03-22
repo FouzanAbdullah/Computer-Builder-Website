@@ -1,9 +1,8 @@
 body {
-    background: url(src/circuit_bg2.png);
+    background: url(src/circuit_bg.png) no-repeat #fff center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation: colorCycle 10s infinite;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
@@ -60,59 +59,7 @@ p {
     background-color: #4a4a4a;
 }
 
-.top_search {
-    width: 370px;
-    height: 32px;
-    margin: 0px 20px 0 0;
-    _margin: 0px 10px 0 0;
-    float: right;
-    background: url(src/top_search_bg.gif) no-repeat center;
-}
 
-input.search_input {
-    width: 182px;
-    height: 18px;
-    float: left;
-    margin: 5px 0 0 0;
-    border: 1px solid #dbdbdb;
-    border-bottom-color: #ffffff;
-    border-right-color: #ffffff;
-}
-
-.search_text {
-    float: left;
-    width: 110px;
-    padding: 8px 0 0 15px;
-    color: #999999;
-}
-
-.search_text a {
-    text-decoration: none;
-    color: #999999;
-}
-
-.search_bt {
-    float: left;
-    padding: 2px 0 0 15px;
-}
-
-.languages {
-    float: right;
-    width: 150px;
-    padding: 8px 0 0 0;
-}
-
-.lang_text {
-    float: left;
-    padding: 0 5px 0 0;
-    color: #b3adad;
-}
-
-a.lang {
-    display: block;
-    float: left;
-    padding: 0 5px 0 5px;
-}
 
 #header {
     width: 1000px;
@@ -141,10 +88,6 @@ details {
     text-decoration: none;
     color: #000000;
 }
-
-
-
-
 
 #main_content {
     clear: both;
@@ -199,10 +142,9 @@ a.nav1:link, a.nav1:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/home.png) no-repeat left;
     color: #676d77;
 }
 
@@ -210,10 +152,9 @@ a.nav2:link, a.nav2:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/services.png) no-repeat left;
     color: #676d77;
 }
 
@@ -221,10 +162,9 @@ a.nav3:link, a.nav3:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/favs.png) no-repeat left;
     color: #676d77;
 }
 
@@ -232,10 +172,9 @@ a.nav4:link, a.nav4:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/user_add.png) no-repeat left;
     color: #676d77;
 }
 
@@ -243,10 +182,9 @@ a.nav5:link, a.nav5:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/car.png) no-repeat left;
     color: #676d77;
 }
 
@@ -254,10 +192,9 @@ a.nav6:link, a.nav6:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/contact-new.png) no-repeat left;
     color: #676d77;
 }
 
@@ -265,10 +202,9 @@ a.nav7:link, a.nav7:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/my-computer.png) no-repeat left;
     color: #676d77;
 }
 
@@ -276,34 +212,14 @@ a.nav8:link, a.nav8:visited {
     display: block;
     float: left;
     padding: 0px 8px 0px 22px;
-    margin: 0 14px 0 14px;
+    margin: 0 30px 0 14px;
     height: 50px;
     text-decoration: none;
-    background: url(src/featured-computer.png) no-repeat left;
     color: #676d77;
 }
 
 a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hover, a.nav7:hover, a.nav8:hover {
     color: #333333;
-}
-
-
-.crumb_navigation {
-    width: 980px;
-    height: 15px;
-    padding: 5px 10px 0 20px;
-    color: #333333;
-    background: url(src/navbullet.png) no-repeat left;
-    background-position: 5px 6px;
-}
-
-.crumb_navigation a {
-    color: #0fa0dd;
-    text-decoration: underline;
-}
-
-span.current {
-    color: #0fa0dd;
 }
 
 
