@@ -52,6 +52,7 @@ p {
     height: auto;
     margin: auto;
     padding: 0px;
+    margin-top: 8px;
 }
 
 .top_bar {
@@ -254,7 +255,7 @@ ul.left_menu li {
 }
 
 ul.left_menu li.odd a {
-    width: 166px;
+    width: 100%;
     height: 25px;
     display: block;
     background: url(src/checked.png) no-repeat left #dad0d0;
@@ -267,7 +268,7 @@ ul.left_menu li.odd a {
 }
 
 ul.left_menu li.even a {
-    width: 166px;
+    width: 100%;
     height: 25px;
     display: block;
     background: url(src/checked.png) no-repeat left #eee6e6;
@@ -376,9 +377,9 @@ a.join {
 
 
 .right_content {
-    width: 196px;
-    float: left;
-    padding: 5px 0 0 0;
+    width: 95%;
+    float: right;
+    padding: 0px 0 0 0;
 }
 
 .shopping_cart {
