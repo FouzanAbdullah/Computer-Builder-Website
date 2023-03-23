@@ -86,7 +86,7 @@ var renderNavBar = function () {
 
 	makeNavChild("Home", "index.html", ul);
 	// ! ADD PRODUCT HTML
-	makeNavChild("Products", "products.html", ul);
+	makeNavChild("Browse Products", "products.html", ul);
 	makeNavChild("Build a PC", "build.html", ul);
 	makeNavChild("Featured", "featured.html", ul);
 	makeNavChild("Specials", "#", ul);
