@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="renderNavbar.js"></script>
+    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+</head>
+
+<style>
+    img {
+        max-width: 150px;
+    }
+    .box {
+        background-color: #ffffff;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        max-width: 65%;
+        padding: 8px;
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .box:hover {
+        background-color: #dfdfdf;
+        border: 2px solid #dfdfdf;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    h3 {
+        text-align: center;
+        font-weight: 700;
+    }
+</style>
+
+<!-- !Make links for each-->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-cpu.png"/>
+                        <h3>CPU</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="motherboardshop.html">
+                        <img src="src/nav-motherboard.png"/>
+                        <h3>Motherboard</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-videocard.png"/>
+                        <h3>Video Card</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-memory.png"/>
+                        <h3>Memory</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-powersupply.png"/>
+                        <h3>Power Supply</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-ssd.png"/>
+                        <h3>Storage</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-case.png"/>
+                        <h3>Case</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <a href="products.html">
+                        <img src="src/nav-os.jpg"/>
+                        <h3>OS</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

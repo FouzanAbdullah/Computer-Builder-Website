@@ -21,7 +21,6 @@
                     });
                 }
             }
-
         </script>
 
         <style>
@@ -75,8 +74,7 @@
             }
 
             .card {
-                margin-right: 8px;
-                margin-top: 8px;
+                margin: 8px;
             }
 
             label {
@@ -100,50 +98,63 @@
             button {
                 margin-top: 16px;
             }
+
+            .red-btn {
+                color: white;
+                background-color: #800000;
+                border: 1px solid black;
+            }
+
+            .red-btn:hover {
+                background-color: #9b0000;
+                border: 1px solid #9b0000;
+            }
         </style>
     </head>
     <body>
         <div id="main_container">
             <div class="row">
                 <div class="col-3 text-center">
-                    <h1 class="text-center text-white">Filters</h1>
-                    <div class="slider">
-                        <input type="range" min="200" max="10000" value="100" oninput="rangeValue.innerText = this.value">
-                    </div>
-                    <div class ="row">
-                        <div class="col-5">
-                            <p class="text-white text-right">Price: $</p>
+                    <div class="filter-box">
+                        <h1 class="text-center text-white">Filters</h1>
+                        <div class="slider">
+                            <input type="range" min="200" max="10000" value="100" oninput="rangeValue.innerText = this.value">
                         </div>
-                        <div class="col-4">
-                            <p id="rangeValue" class="text-white">200</p>
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="text-white text-right">Price: $</p>
+                            </div>
+                            <div class="col-4">
+                                <p id="rangeValue" class="text-white">200</p>
+                            </div>
                         </div>
+                        <select id="cpuSelect" name="cpuSelect">
+                            <option disabled selected>Select CPU</option>
+                            <option>Intel</option>
+                            <option>AMD</option>
+                        </select>
+                        <select id="overclockable" name="overclockable">
+                            <option disabled selected>Overclockable</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <select id="case" name="case">
+                            <option disabled selected>Case</option>
+                            <option>Micro ATX</option>
+                            <option>ATX</option>
+                        </select>
+                        <label for="start text-white">Date created:</label>
+                        <input type="date" id="start" name="start">
+                        
+                        <select id="gpu" name="gpu">
+                            <option disabled selected>GPU</option>
+                            <option>Nvidia</option>
+                            <option>AMD</option>
+                            <option>30 series</option>
+                            <option>40 series</option>
+                        </select>
+                        <button type="button" class="red-btn add-game btn btn-primary">Apply Filters</button>
                     </div>
-                    <select id="cpuSelect" name="cpuSelect">
-                        <option  disabled selected>Select CPU</option>
-                        <option>Intel</option>
-                        <option>AMD</option>
-                    </select>
-                    <select id="overclockable" name="overclockable">
-                        <option  disabled selected>Overclockable</option>
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <select id="case" name="case">
-                        <option  disabled selected>Case</option>
-                        <option>Micro ATX</option>
-                        <option>ATX</option>
-                    </select>
-                    <label for="start text-white">Date created:</label>
-                    <input type="date" id="start" name="start">
-
-                    <select id="gpu" name="gpu">
-                        <option  disabled selected>GPU</option>
-                        <option>Nvidia</option>
-                        <option>AMD</option>
-                        <option>30 series</option>
-                        <option>40 series</option>
-                    </select>
-                    <button type="button" class="btn btn-secondary btn-block">Apply Filters</button>
                 </div>
                 <!-- end of left content -->
                 <div class="col-9">
