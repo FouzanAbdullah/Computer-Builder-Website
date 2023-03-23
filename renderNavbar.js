@@ -20,6 +20,10 @@ function getPageName() {
 	return basename ? basename : "";
 }
 
+function makeNavChild() {
+
+}
+
 var renderNavBar = function () {
 	var nav = document.createElement("nav");
 	nav.classList.add("navbar", "navbar-expand-md", "navbar-dark", "bg-dark");
