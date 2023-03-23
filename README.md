@@ -1,6 +1,6 @@
 # Computer Builder Mock Website
 Mock application for a computer building website in COSC 3P94.
-Access [here](https://fouzanabdullah.github.io/COSC-3P94-Stage-2/).
+Access [here](https://cosc3p94group12.netlify.app/index.html).
 
 ## Team Members
 | Name | Student Number|
