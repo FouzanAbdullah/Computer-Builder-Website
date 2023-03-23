@@ -41,10 +41,11 @@ var renderFooter = function() {
 	body.setAttribute("style", "height: auto; width: auto; min-height: 100%; min-height: 100vh; overflow-y: scroll; margin: 0; padding: 0;");
 
 	var footer = document.createElement("footer");
-	var h1 = document.createElement("h1");
-	h1.classList.add("text-white", "text-center");
-	h1.innerHTML = "Footer";
-	footer.appendChild(h1);
+	var p = document.createElement("p");
+	p.classList.add("text-white", "text-center");
+	p.setAttribute("style", "padding:1rem 1rem 0.5rem 0;margin: 0; position:fixed; bottom:0;right:0!important;justify-content: right;color:#555555 !important");
+	p.innerHTML = "COSC 3P94 • Group 12 • &copy 2023";
+	footer.appendChild(p); 
 	
 	document.getElementsByTagName("BODY")[0].appendChild(footer);
 }
