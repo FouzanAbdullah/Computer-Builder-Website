@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 body{
@@ -20,14 +21,10 @@ body{
     width: 400px;
     background: #FFFFFF;
     border-radius: 15px;
+    text-align:left;
 }
 
-.login-container{
-    margin-top:10%;
-    margin-left:25%;
-    width:50%;
-    padding:10px;
-}
+
 
 #login-header{
     text-align:center;
@@ -66,4 +63,8 @@ body{
 
 #mainPart {
     margin-top: 5vw;
+}
+
+#instruction{
+    text-align: center;
 }

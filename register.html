@@ -1,146 +1,63 @@
 <!--
-    Fouzan Abdullah
-    6840797
+    Fouzan Abdullah: 6840797
+    Ibrahim Hashmi: 6352926
 -->
 <html>
-<title>Register</title>
+  <title>Register</title>
 <head>
   <meta name="viewport" content="width= device-width, initial-scale = 1.0">
-<script>
-  function verifyFirstName(){
-    var initialName = /^[a-zA-Z]+$/;
-    var t = document.getElementById("user").value;
-    if (!initialName.test(t)){
-      document.getElementById("verifyFirstName").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyFirstName").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }
-  
-  function verifyLastName(){
-    var initialName2 = /^[a-zA-Z]+$/;
-    var t2 = document.getElementById("user2").value;
-    if (!initialName2.test(t2)){
-      document.getElementById("verifyLastName").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyLastName").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }  
 
-  function verifyEmail(){
-    var t3 = document.getElementById("user3").value;
-    if (t3 == ""){
-      document.getElementById("verifyEmail").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyEmail").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="renderNavbar.js"></script>
+<script type="text/javascript" src="bootstrap.bundle.min.js"></script>
 
-  function verifyPhone(){
-    var initialName4 = /^[0-9]+$/;
-    var t4 = document.getElementById("user4").value;
-    if (!initialName3.test(t4)){
-      document.getElementById("verifyPhone").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else if (t4.length < 10 || t4.length > 10) {
-      document.getElementById("verifyPhone").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyPhone").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }
 
-  function checkInputs() {
-    if(document.getElementById("errors").value == "true") {
-      alert("Errors in your webpage, please fix before pressing register.")
-    }
-  }
-  
-</script>
-<style>
-    body {
-            background-color: rgb(133, 132, 220);
-
-            width: 800px;
-            margin-left: 50px;
-            margin-top: 30px;
-        }
-    h1, h2, p, label, span {
-        font-family: 'Segoe UI', 'sans-serif';
-    }
-    input, select {
-        border: 1px solid #dddddd;
-        border-radius: 5px;
-        height: 35px;
-        padding-left: 7px;
-        margin: 3px;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" href="loginStyle.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Registration Form</h1>
-<p>Please fill in all fields and click Register.</p>
+  <div id="mainPart" class="text-center">
+    <div class="login">
+      <h1 id="login-header">New User Registration</h1>
+      <p id="instruction">Please fill in all required fields</p>
+      <form>
 
-<h1>User Information</h1>
-<table>
-<form action="insert.php" method="POST">
-<tr>
-<td>
-  <label for="user">First name:</label></br>
-</td>
-<td>
-  <input type="firstname" required="true" id="user" name ="user" placeholder="Enter first name" onblur="verifyFirstName()"/>
-  <span id="verifyFirstName" style="color: red; display: none;">First name is required</span>
-</td>
-</tr>
-<tr>
-<td>
-  <label for="user">Last name:</label></br>
-</td>
-<td>
-  <input type="lastname" required="true" id="user2" name ="user2" placeholder="Enter last name" onblur="verifyLastName()"/>
-  <span id="verifyLastName" style="color: red; display: none;">Last name is required</span>
-</td>
-</tr>
-<tr>
-<td>
-  <label for="user">Email:</label></br>
-</td>
-<td>
-  <input type="email" id="user3" name ="user3" placeholder="Enter email" onblur="verifyEmail()">
-  <span id="verifyEmail" style="color: red; display: none;">Email is required</span>
-</td>
-</tr>
-<tr>
-<td>
-  <label for="user">Phone:</label></br>
-</td>
-<td>
-  <input type="tel" id="user4" name ="user4" placeholder="(999) 999-9999" onblur="verifyPhone()"/>
-  <span id="verifyPhone" style="color: red; display: none;">Phone is required</span>
-</td>
-</tr>
-<td>
-  <label for="user">Password:</label></br>
-</td>
-<td>
-  <input type="password" id="user5" name ="user5" placeholder="Enter password" onblur="verifyPassword()"/>
-  <span id="verifyPassword" style="color: red; display: none;">Password is required</span>
-</td>
-<input id="errors" style="display: none;" name="errors" value="false">
-</table> 
+        <div class="form-group">
+          <label class = "form-label">First Name</label>
+          <input class = "form-control" type="text" id="firstName">
+        </div>
 
-</br></br>
-  <input type="hidden" id="errors" value="false"/> 
-  <input type="submit" name="register" value="Register" onclick="return verifyFirstName(); verifyLastName(); verifyEmail(); verifyPhone(); checkInputs();"/>
-</form>
+        <div class="form-group">
+          <label class = "form-label">Last Name</label>
+          <input class = "form-control" type="text" id="lastName">
+        </div>
+
+        <div class="form-group">
+          <label class = "form-label" for="email">Email address</label>
+          <input class = "form-control" type="email" id="email">
+        </div>
+
+        <div class="form-group">
+          <label class = "form-label"  for="password">Password</label>
+          <input class = "form-control" type="password" id="password">
+        </div>
+
+        <div class="form-group">
+          <label class = "form-label"  for="password">Confirm Password</label>
+          <input class = "form-control" type="password" id="password">
+        </div>
+
+        <input class = "btn btn-success w-100" type="submit" value="Register">
+
+        <div id="register-link">
+          <a href="login.html">Already have an account? Login here</a>
+        </div>
+      
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
