@@ -26,7 +26,7 @@ function makeNavChild(label, linksTo, ulElement) {
 	li.classList.add("nav-item", "navButton");
 
 	var a = document.createElement("a");
-	a.classList.add("nav-link");
+	a.classList.add("nav-link", "text-white");
 	a.innerHTML = label;
 	a.href = linksTo;
 
@@ -72,8 +72,6 @@ var renderNavBar = function () {
 	makeNavChild("Featured", "featured.html", ul);
 	makeNavChild("Specials", "#", ul);
 	makeNavChild("Contact Us", "contact.html", ul);
-	
-	
 
 	makeNavChild("Shipping", "#", ul2);
 	makeNavChild("My Account", "login.html", ul2);
