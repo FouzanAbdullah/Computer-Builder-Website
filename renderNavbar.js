@@ -62,7 +62,7 @@ var renderNavBar = function () {
 	ul2.classList.add(
 		"navbar-nav",
 		"nav-fill",
-		"col-3"
+		"col-md-3"
 	);
 	div.appendChild(ul2);
 
