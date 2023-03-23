@@ -14,7 +14,7 @@ body{
 
 .login{
     padding: 25px;
-    height: 400px;
+    height: min-content;
     width: 400px;
     background: #FFFFFF;
     border-radius: 15px;
