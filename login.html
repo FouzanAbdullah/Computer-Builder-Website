@@ -11,92 +11,12 @@
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyDLIYOvAhqlZ72w346w9xa-j9Dk6FJGsO4",
-      authDomain: "stage2-3p94.firebaseapp.com",
-      databaseURL: "https://stage2-3p94-default-rtdb.firebaseio.com",
-      projectId: "stage2-3p94",
-      storageBucket: "stage2-3p94.appspot.com",
-      messagingSenderId: "274180847971",
-      appId: "1:274180847971:web:9c39e94585566e6f5b7b56",
-      measurementId: "G-YRTETRZSE7"
-    };
-  
-    firebase.initializeApp(firebaseConfig);
-var database = firebase.database();
-
-
-// Convert the JSON data to an object
-var jsonData = JSON.parse(JSON.stringify(data));
-
-// Write the data to Firebase using the `database.ref().push()` method
-database.ref('path/to/data').push(jsonData)
-  .then(function() {
-    console.log('JSON data saved successfully!');
-  })
-  .catch(function(error) {
-    console.error('Error saving JSON data: ', error);
-  });
-
-  document.getElementById('myForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form's default submission behavior
-
-  // Get the form data
-  var formData = {
-    user3: user3,
-    user: user,
-  };
-  
-  // Convert the form data to JSON
-  var jsonData = JSON.stringify(formData);
-
-  // Write the JSON data to a file
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'data.json');
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(jsonData);
-});
-
-
-
-  function verifyPassword(){
-    var initialName = /^[a-zA-Z]+$/;
-    var t = document.getElementById("user").value;
-    if (!initialName.test(t)){
-      document.getElementById("verifyPassword").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyPassword").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }
-
-  function verifyEmail(){
-    var t3 = document.getElementById("user3").value;
-    if (t3 == ""){
-      document.getElementById("verifyEmail").style.display = "";
-      document.getElementById("errors").value = 'true';
-    } else {
-      document.getElementById("verifyEmail").style.display = "none";
-      document.getElementById("errors").value = "false";
-    }
-  }
-
-
-  function checkInputs() {
-    if(document.getElementById("errors").value == "true") {
-      alert("Errors in your webpage, please fix before pressing login.")
-    }
-  }
-  
-
 </script>
+
   <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
 
-<!-- <h1>Login Form</h1>
 <p>Please fill in all fields and click Login.</p>
 
 <h1>User Information</h1>
