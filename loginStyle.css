@@ -23,7 +23,8 @@ body{
 #login-header{
     text-align:center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .login form .form-group{
@@ -44,7 +45,3 @@ body{
     font-size: 15px;
 }
 
-#forgot-password{
-    text-align: center;
-    font-size: 15px;
-}
