@@ -113,7 +113,7 @@ var renderNavBar = function () {
 	ul.appendChild(liHome);
 	liHome.appendChild(aHome);
 	ul.appendChild(liProducts);
-	liProducts.appendChild(aTimeline);
+	liProducts.appendChild(aProducts);
 	ul.appendChild(liEvents);
 	liEvents.appendChild(aEvents);
 	ul.appendChild(liQuestion);
