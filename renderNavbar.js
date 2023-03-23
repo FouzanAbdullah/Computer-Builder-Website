@@ -52,16 +52,32 @@ var renderNavBar = function () {
 		"mt-lg-0"
 	);
 	div.appendChild(ul);
+	
+	//add space in navbar
+	var spacer = document.createElement("div");
+	spacer.classList.add("col-2");
+	div.appendChild(spacer);
+
+	var ul2 = document.createElement("ul");
+	ul2.classList.add(
+		"navbar-nav",
+		"nav-fill",
+		"col-3"
+	);
+	div.appendChild(ul2);
 
 	makeNavChild("Home", "index.html", ul);
 	makeNavChild("Products", "featured.html", ul);
 	makeNavChild("Build a PC", "build.html", ul);
 	makeNavChild("Featured", "featured.html", ul);
 	makeNavChild("Specials", "#", ul);
-	makeNavChild("My Account", "login.html", ul);
-	makeNavChild("Sign Up", "register.html", ul);
-	makeNavChild("Shipping", "#", ul);
 	makeNavChild("Contact Us", "contact.html", ul);
+	
+	
+
+	makeNavChild("Shipping", "#", ul2);
+	makeNavChild("My Account", "login.html", ul2);
+	makeNavChild("Sign Up", "register.html", ul2);
 
 	document.body.insertBefore(nav, document.body.firstChild);
 
