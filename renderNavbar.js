@@ -29,6 +29,7 @@ function makeNavChild(label, linksTo, ulElement) {
 	a.classList.add("nav-link", "text-white");
 	a.innerHTML = label;
 	a.href = linksTo;
+	a.style.padding = "15px";
 
 	ulElement.appendChild(li);
 	li.appendChild(a);
@@ -37,6 +38,7 @@ function makeNavChild(label, linksTo, ulElement) {
 var renderNavBar = function () {
 	var nav = document.createElement("nav");
 	nav.classList.add("navbar", "navbar-expand-md", "navbar-dark", "bg-dark");
+	nav.setAttribute("style", "padding: 0px;");
 
 	var div = document.createElement("div");
 	div.classList.add("navbar-collapse");
@@ -51,6 +53,7 @@ var renderNavBar = function () {
 		"mt-2",
 		"mt-lg-0"
 	);
+	ul.setAttribute("style", "height:100%;");
 	div.appendChild(ul);
 	
 	//add space in navbar
