@@ -17,37 +17,6 @@
 </head>
 <body>
 
-<p>Please fill in all fields and click Login.</p>
-
-<h1>User Information</h1>
-<table>
-<form id="myForm">
-
-<tr>
-<td>
-  <label for="user">Email:</label></br>
-</td>
-<td>
-  <input type="email" id="user3" name ="user3" placeholder="Enter email" onblur="verifyEmail()">
-  <span id="verifyEmail" style="color: red; display: none;">Email is required</span>
-</td>
-</tr>
-<tr>
-    <td>
-      <label for="user">Password:</label></br>
-    </td>
-    <td>
-      <input type="password" id="user" name ="user" placeholder="Enter password" onblur="verifyPassword()">
-      <span id="verifyPassword" style="color: red; display: none;">Password is required</span>
-    </td>
-    </tr>
-</table> 
-
-</br></br>
-  <input type="hidden" id="errors" value="false"/> 
-  <input type="submit" name="login" value="Login" onclick="return verifyEmail(); verifyPassword(); checkInputs();"/>
-</form> -->
-
   <div class="login">
     <h1 id="login-header">Login</h1>
     <form>
