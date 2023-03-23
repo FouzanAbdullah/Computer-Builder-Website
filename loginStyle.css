@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0D6EFD;
+}
+
+.login{
+    padding: 25px;
+    height: 400px;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+#login-header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+.login form .form-group{
+    margin-bottom: 12px;
+}
+
+.login form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

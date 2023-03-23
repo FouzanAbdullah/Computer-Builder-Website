@@ -92,25 +92,7 @@ database.ref('path/to/data').push(jsonData)
   
 
 </script>
-<style>
-    body {
-            background-color: rgb(133, 132, 220);
-
-            width: 800px;
-            margin-left: 50px;
-            margin-top: 30px;
-        }
-    h1, h2, p, label, span {
-        font-family: 'Segoe UI', 'sans-serif';
-    }
-    input, select {
-        border: 1px solid #dddddd;
-        border-radius: 5px;
-        height: 35px;
-        padding-left: 7px;
-        margin: 3px;
-    }
-</style>
+  <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
 
@@ -147,7 +129,7 @@ database.ref('path/to/data').push(jsonData)
 </form> -->
 
   <div class="login">
-    <h1>Login</h1>
+    <h1 id="login-header">Login</h1>
     <form>
 
       <div class="form-group">
@@ -164,7 +146,9 @@ database.ref('path/to/data').push(jsonData)
         <input type="checkbox" id="check">
         <label for="check">Remember me</label>
       </div>
-      
+
+      <input type="submit" value="SIGN IN">
+
     </form>
   </div>
 
