@@ -48,7 +48,7 @@ p {
 }
 
 #main_container {
-    width: 1000px;
+    width: 1100px;
     height: auto;
     margin: auto;
     padding: 0px;
@@ -233,7 +233,7 @@ a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hov
 .title_box {
     width: 196px;
     height: 30px;
-    margin: 5px 0 0 0;
+    /* margin: 5px 0 0 0; */
     background: maroon no-repeat center;
     text-align: center;
     font-size: 13px;

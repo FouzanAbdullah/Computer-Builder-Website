@@ -44,8 +44,7 @@
             }
 
             .row {
-                padding: 10px;
-                padding-top: 15px;
+                padding: 16px;
             }
 
             button {
@@ -71,9 +70,9 @@
             }
 
             .component-row {
-                border: 2px solid #8a97ab;
+                border: 1px solid #000000;
                 border-radius: 5px;
-                background-color: #8a97ab;
+                background-color: rgba(40, 40, 40, 0.6);
                 margin-bottom: 4px;
             }
 
@@ -88,13 +87,30 @@
 
             .section {
                 border: 2px solid black;
-                padding: 5px;
-                margin-bottom: 3px;
+                background-color: rgba(40, 40, 40, 0.6);
+                padding: 16px;
+                margin-bottom: 8px;
+                
             }
 
             h7 {
                 display: block;
                 width: 100%;
+            }
+
+            .add-game {
+                margin-top: 16px;
+            }
+
+            .red-btn {
+                color: white;
+                background-color: #800000;
+                border: 1px solid black;
+            }
+
+            .red-btn:hover {
+                background-color: #9b0000;
+                border: 1px solid #9b0000;
             }
         </style>
     </head>
@@ -117,7 +133,7 @@
                 <div class="col-9">
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                            <button type="button" class="red-btn btn btn-primary">Edit</button>
                         </div>
                         <div class="col-8">
                             <h4 class="text-white">MSI GeForce RTX 4090 24GB</h4>
@@ -128,7 +144,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose CPU</button>
+                            <button type="button" class="red-btn btn btn-primary">Choose CPU</button>
                         </div>
                         <div class="col-8">
 
@@ -136,7 +152,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Motherboard</button>
+                            <button type="button" class="red-btn btn btn-primary">Choose Motherboard</button>
                         </div>
                         <div class="col-8">
 
@@ -144,7 +160,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Storage</button>
+                            <button type="button" class="red-btn btn btn-primary">Choose Storage</button>
                         </div>
                         <div class="col-8">
 
@@ -152,7 +168,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose PSU</button>
+                            <button type="button" class="red-btn btn btn-primary">Choose PSU</button>
                         </div>
                         <div class="col-8">
 
@@ -160,7 +176,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                            <button type="button" class="red-btn btn btn-primary">Edit</button>
                         </div>
                         <div class="col-8">
                             <h4 class="text-white">NZXT H510 Compact ATX</h4>
@@ -171,7 +187,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Edit</button>
+                            <button type="button" class="red-btn btn btn-primary">Edit</button>
                         </div>
                         <div class="col-8">
                             <h4 class="text-white">Windows 11 Pro Edition</h4>
@@ -182,7 +198,7 @@
                     </div>
                     <div class="component-row row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-warning btn-lg btn-block">Choose Peripherals</button>
+                            <button type="button" class="red-btn btn btn-primary">Choose Peripherals</button>
                         </div>
                         <div class="col-8">
 
@@ -203,7 +219,7 @@
                         <h7 class="text-white">Valorant: 178fps</h7>
                         <h7 class="text-white">CS:GO: 175fps</h7>
                         <h7 class="text-white">Minecraft (Raytracing): 144fps</h7>
-                        <button type="button" class="btn btn-secondary btn-lg btn-block">Add Game</button>
+                        <button type="button" class="red-btn add-game btn btn-primary">Add Game</button>
                     </div>
                 </div>
             </div>

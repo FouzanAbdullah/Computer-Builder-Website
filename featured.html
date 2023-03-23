@@ -66,6 +66,7 @@
                 object-fit: cover;
                 background-size: cover;
                 background-position: center;
+                padding-top: 10px;
                 aspect-ratio: 1/1;
             }
 
@@ -97,7 +98,7 @@
             }
 
             button {
-                margin-bottom: 8px;
+                margin-top: 16px;
             }
         </style>
     </head>
@@ -106,7 +107,6 @@
             <div class="row">
                 <div class="col-3 text-center">
                     <h1 class="text-center text-white">Filters</h1>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block">Apply Filters</button>
                     <div class="slider">
                         <input type="range" min="200" max="10000" value="100" oninput="rangeValue.innerText = this.value">
                     </div>
@@ -143,6 +143,7 @@
                         <option>30 series</option>
                         <option>40 series</option>
                     </select>
+                    <button type="button" class="btn btn-secondary btn-block">Apply Filters</button>
                 </div>
                 <!-- end of left content -->
                 <div class="col-9">
