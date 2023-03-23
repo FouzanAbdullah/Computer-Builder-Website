@@ -43,7 +43,7 @@ var renderFooter = function() {
 	var footer = document.createElement("footer");
 	var h1 = document.createElement("h1");
 	h1.classList.add("text-white", "text-center");
-	h1.innerHTML = "Test";
+	h1.innerHTML = "Footer";
 	footer.appendChild(h1);
 	
 	document.getElementsByTagName("BODY")[0].appendChild(footer);
