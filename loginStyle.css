@@ -46,3 +46,11 @@ body{
     font-size: 15px;
 }
 
+#register-link{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#forgot-pw-link{
+    padding-bottom: 7px;
+}
