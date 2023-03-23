@@ -21,14 +21,10 @@ body{
     width: 400px;
     background: #FFFFFF;
     border-radius: 15px;
+    text-align:left;
 }
 
-.login-container{
-    margin-top:10%;
-    margin-left:25%;
-    width:50%;
-    padding:10px;
-}
+
 
 #login-header{
     text-align:center;
@@ -64,3 +60,19 @@ body{
 #forgot-pw-link{
     padding-bottom: 7px;
 }
+
+@media (min-width: 769px){
+    .login-container{
+        margin-top:10%;
+        margin-left:25%;
+        width:50%;
+        padding:10px;
+    }
+    .text-center{
+
+    }
+}
+.login-container{
+
+}
+
