@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	renderNavBar();
+	renderFooter();
 });
 
 function getPageName() {
@@ -33,6 +34,19 @@ function makeNavChild(label, linksTo, ulElement) {
 
 	ulElement.appendChild(li);
 	li.appendChild(a);
+}
+
+var renderFooter = function() {
+	var body = document.getElementsByTagName("BODY")[0];
+	body.setAttribute("style", "height: auto; width: auto; min-height: 100%; min-height: 100vh; overflow-y: scroll; margin: 0; padding: 0;");
+
+	var footer = document.createElement("footer");
+	var h1 = document.createElement("h1");
+	h1.classList.add("text-white", "text-center");
+	h1.innerHTML = "Footer";
+	footer.appendChild(h1);
+	
+	document.getElementsByTagName("BODY")[0].appendChild(footer);
 }
 
 var renderNavBar = function () {

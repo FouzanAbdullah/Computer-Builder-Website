@@ -7,13 +7,10 @@
 <title>Login</title>
 <head>
   <meta name="viewport" content="width= device-width, initial-scale = 1.0">
-  <script type="module" src="data.json">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-</script>
+
 <script type="text/javascript" src="renderNavbar.js"></script>
 <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
 <link rel="stylesheet" href="loginStyle.css">
@@ -41,7 +38,12 @@
           <a href="/">Forgot Password?</a>
         </div>
 
-        <input class = "btn btn-success w-100" type="submit" value="Sign In">
+
+      <div id="register-link">
+        <a href="register.html">Register</a>
+      </div>
+      
+
 
         <div id="register-link">
           <a href="/">Register</a>
