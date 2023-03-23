@@ -8,39 +8,50 @@
 <head>
   <meta name="viewport" content="width= device-width, initial-scale = 1.0">
 
-  <link rel="stylesheet" href="loginStyle.css">
-  <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="renderNavbar.js"></script>
+<script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link rel="stylesheet" href="loginStyle.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="login">
-    <h1 id="login-header">Enter your credentials</h1>
-    <form>
+  <div class="text-center">
+  
+    <div class="login">
+      <h1 id="login-header">Enter your credentials</h1>
+      <form>
 
-      <div class="form-group">
-        <label class = "form-label" for="email">Email address</label>
-        <input class = "form-control" type="email" id="email">
-      </div>
+        <div class="form-group">
+          <label class = "form-label" for="email">Email address</label>
+          <input class = "form-control" type="email" id="email">
+        </div>
 
-      <div class="form-group">
-        <label class = "form-label"  for="password">Password</label>
-        <input class = "form-control" type="password" id="password">
-      </div>
+        <div class="form-group">
+          <label class = "form-label"  for="password">Password</label>
+          <input class = "form-control" type="password" id="password">
+        </div>
 
-      <div id="forgot-pw-link">
-        <a href="/">Forgot Password?</a>
-      </div>
-      
-      <input class = "btn btn-success w-100" type="submit" value="Sign In">
+        <div id="forgot-pw-link">
+          <a href="/">Forgot Password?</a>
+        </div>
+
 
       <div id="register-link">
         <a href="register.html">Register</a>
       </div>
       
 
-    </form>
-  </div>
 
+        <div id="register-link">
+          <a href="/">Register</a>
+        </div>
+      
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
