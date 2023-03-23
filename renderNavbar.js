@@ -112,8 +112,8 @@ var renderNavBar = function () {
 	//add the created elements to the navbar element
 	ul.appendChild(liHome);
 	liHome.appendChild(aHome);
-	ul.appendChild(liTimeline);
-	liTimeline.appendChild(aTimeline);
+	ul.appendChild(liProducts);
+	liProducts.appendChild(aTimeline);
 	ul.appendChild(liEvents);
 	liEvents.appendChild(aEvents);
 	ul.appendChild(liQuestion);
