@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0D6EFD;
+}
+
+.login{
+    padding: 25px;
+    height: min-content;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+#login-header{
+    text-align:center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.login form .form-group{
+    margin-bottom: 12px;
+}
+
+.login form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 25px; */
+}
+
+.login form input{
+    font-size: 25px;
+    width:100%;
+}
+
+.form-check{
+    font-size: 15px;
+}
+
+#register-link{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#forgot-pw-link{
+    padding-bottom: 7px;
+}
