@@ -779,7 +779,7 @@ a.contact {
 
 .home-feature img:hover {
     /* color: rgba(255, 255, 255, 1); */
-    box-shadow: 0px 0px 10px 2px #800000;
+    box-shadow: 0px 0px 10px 4px #800000;
 }
 
 .home-feature>div:first-child:hover,
@@ -794,6 +794,7 @@ a.contact {
 
 .home-feature p {
     font-size: 18px;
+    text-align: justify;
 }
 
 .home-feature ul {
@@ -882,3 +883,5 @@ a.contact {
     justify-content: center;
     align-items: center;
 }
+
+/*  */
