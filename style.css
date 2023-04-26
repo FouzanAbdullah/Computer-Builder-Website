@@ -898,3 +898,34 @@ a.contact {
     background-color: rgb(128, 0, 0);
     padding: 10px 0;
 }
+
+.latest-prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.latest-prod {
+    margin: 10px 20px;
+    padding: 15px;
+    border: 1px solid rgb(50, 50, 50);
+    /* border-radius: 5px; */
+    transition: 0.3s;
+}
+
+.latest-prod:hover {
+    background-color: rgba(70, 60, 60, 0.3);
+}
+
+.latest-prod p {
+    margin: 0;
+}
+
+#latest-prod-price {
+    font-size: 22px;
+}
+
+#latest-prod-oldprice {
+    color: gray;
+    text-decoration: line-through;
+}
