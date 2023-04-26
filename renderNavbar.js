@@ -92,7 +92,7 @@ var renderNavBar = function () {
 	makeNavChild("Specials", "#", ul);
 	makeNavChild("Contact Us", "contact.html", ul);
 
-	makeNavChild("Shipping", "#", ul2);
+	// makeNavChild("Shipping", "#", ul2);	// is not used
 	makeNavChild("My Account", "login.html", ul2);
 	makeNavChild("Sign Up", "register.html", ul2);
 

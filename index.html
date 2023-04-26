@@ -1,105 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Computer Store</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-    <script type="text/javascript" src="data.js"></script>
-      <script type="text/javascript" src="renderNavbar.js"></script>
-      <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="style.css" />
-      <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-  </head>
-  <body>
-    <div id="main_container">    
-      <div class="row">
-        <!-- Left Column -->
-        <div class="col-3">
-          <div class="title_box">Categories</div>
-          <ul class="left_menu">
-            <li class="odd"><a href="processors.html">Processors</a></li>
-            <li class="even"><a href="motherboardshop.html">Motherboards</a></li>
-            <li class="odd"><a href="details.html">GPUs</a></li>
-            <li class="even"><a href="case.html">Case</a></li>
-            <li class="odd"><a href="ram.html">RAM</a></li>
-            <li class="even"><a href="psu.html">PSU</a></li>
-            <li class="odd"><a href="storage.html">Storage</a></li>
-            <li class="even"><a href="os.html">OS</a></li>
-          </ul>
-          <div class="title_box">Special Offer</div>
-          <div class="border_box">
-            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-            <div class="prod_price"><span class="reduce">700$</span> <span class="price">500$</span></div>
-          </div>
-          <div class="title_box">Newsletter</div>
-          <div class="border_box">
-            <input type="text" name="newsletter" class="newsletter_input" value="your email"/>
-            <a href="#" class="join">join</a> </div>
-        </div>
 
-        <!-- Middle Column -->
-        <div class="col-7">
-          <div class="center_title_bar">Latest Products</div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div>
-          </div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div>
-          </div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div>
-          </div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div>
-          </div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div>
-          </div>
-          <div class="prod_box">
-            <div class="center_prod_box">
-              <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-              <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-            </div> 
-         </div>
-        </div>
+<head>
+  <title>Computer Store</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="navbar.js"></script>
+  <!-- <script type="text/javascript" src="renderNavbar.js"></script> -->
+  <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+</head>
 
-        <!-- Right Column -->
-        <div class="col-2">
-          <div class="shopping_cart">
-            <div class="cart_title">Shopping cart</div>
-            <div class="cart_details"> 3 items<br />
-              <span class="border_cart"></span> Total: <span class="price">1450$</span> </div>
-            <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]"><img src="src/shoppingcart.png" alt="" width="48" height="48" border="0" /></a></div>
-          </div>
-          <div class="title_box">What's new</div>
-          <div class="border_box">
+<body>
+
+  <!-- Navigation Bar -->
+  <!-- <div class="nav-bar">
+    <div class="nav-section1">
+      <a href="index.html"><img src="src/companyname.png" alt="companyname" style="max-width: 300px;" /></a>
+      <a href="login.html" class="right-align">Login</a>
+      <a href="register.html" class="right-align">Sign Up</a>
+    </div>
+
+    <div class="nav-section2">
+      <a href="products.html">Browse Products</a>
+      <a href="build.html">PC Builder</a>
+      <a href="featured.html">Featured Builds</a>
+      <a href="#">Special Offers</a>
+      <button type="submit" class="right-align">Search</button>
+      <input type="text" placeholder="Search for hardware..." class="right-align">
+    </div>
+  </div> -->
+  
+  <div id="main_container">
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-3">
+        <div class="title_box">Categories</div>
+        <ul class="left_menu">
+          <li class="odd"><a href="processors.html">Processors</a></li>
+          <li class="even"><a href="motherboardshop.html">Motherboards</a></li>
+          <li class="odd"><a href="details.html">GPUs</a></li>
+          <li class="even"><a href="case.html">Case</a></li>
+          <li class="odd"><a href="ram.html">RAM</a></li>
+          <li class="even"><a href="psu.html">PSU</a></li>
+          <li class="odd"><a href="storage.html">Storage</a></li>
+          <li class="even"><a href="os.html">OS</a></li>
+        </ul>
+        <div class="title_box">Special Offer</div>
+        <div class="border_box">
+          <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+          <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">700$</span> <span class="price">500$</span></div>
+        </div>
+        <div class="title_box">Newsletter</div>
+        <div class="border_box">
+          <input type="text" name="newsletter" class="newsletter_input" value="your email" />
+          <a href="#" class="join">join</a>
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="col-7">
+        <div class="center_title_bar">Latest Products</div>
+        <div class="prod_box">
+          <div class="center_prod_box">
             <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
-            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt="" border="0" /></a></div>
-            <div class="prod_price"><span class="reduce">700$</span> <span class="price">500$</span></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+          </div>
+        </div>
+        <div class="prod_box">
+          <div class="center_prod_box">
+            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+          </div>
+        </div>
+        <div class="prod_box">
+          <div class="center_prod_box">
+            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+          </div>
+        </div>
+        <div class="prod_box">
+          <div class="center_prod_box">
+            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+          </div>
+        </div>
+        <div class="prod_box">
+          <div class="center_prod_box">
+            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+          </div>
+        </div>
+        <div class="prod_box">
+          <div class="center_prod_box">
+            <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+            <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                  border="0" /></a></div>
+            <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
           </div>
         </div>
       </div>
+
+      <!-- Right Column -->
+      <div class="col-2">
+        <div class="shopping_cart">
+          <div class="cart_title">Shopping cart</div>
+          <div class="cart_details"> 3 items<br />
+            <span class="border_cart"></span> Total: <span class="price">1450$</span>
+          </div>
+          <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]"><img
+                src="src/shoppingcart.png" alt="" width="48" height="48" border="0" /></a></div>
+        </div>
+        <div class="title_box">What's new</div>
+        <div class="border_box">
+          <div class="product_title"><a href="details.html?id=nvidiartx3060">Nvidia RTX 3060</a></div>
+          <div class="product_img"><a href="details.html?id=nvidiartx3060"><img src="src/nvidiartx3060.jpg" alt=""
+                border="0" /></a></div>
+          <div class="prod_price"><span class="reduce">700$</span> <span class="price">500$</span></div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

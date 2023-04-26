@@ -3,9 +3,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation: colorCycle 10s infinite;
+    animation: colorCycle 12s infinite;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 11px;
     margin: 0px auto auto auto;
     color: #000;
@@ -14,31 +14,39 @@ body {
 /* Comment this out if using circuit_bg.png */
 @keyframes colorCycle {
     0% {
-        background-color: rgb(255, 0, 0);
+        background-color: rgba(255, 0, 0, 0);
     }
 
-    14% {
-        background-color: rgb(255, 255, 0);
+    12.5% {
+        background-color: rgba(255, 0, 0, 1);
     }
 
-    29% {
-        background-color: rgb(0, 255, 0);
+    25% {
+        background-color: rgba(255, 255, 0, 1);
     }
 
-    43% {
-        background-color: rgb(0, 255, 255);
+    37.5% {
+        background-color: rgba(0, 255, 0, 1);
     }
 
-    57% {
-        background-color: rgb(0, 0, 255);
+    50% {
+        background-color: rgba(0, 255, 255, 1);
     }
 
-    86% {
-        background-color: rgb(255, 0, 255);
+    62.5% {
+        background-color: rgba(0, 0, 255, 1);
+    }
+
+    75% {
+        background-color: rgba(255, 0, 255, 1);
+    }
+
+    87.5% {
+        background-color: rgba(255, 0, 0, 1);
     }
 
     100% {
-        background-color: rgb(255, 0, 0);
+        background-color: rgba(255, 0, 0, 0);
     }
 }
 
@@ -52,7 +60,7 @@ p {
     height: auto;
     margin: auto;
     padding: 0px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 .top_bar {
@@ -685,4 +693,59 @@ a.contact {
 
 #mainImage, #mainImageTitle {
     padding-top: 10px;
+}
+
+
+/* Navigation bar */
+.nav-bar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    /* font-weight: bold; */
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.nav-section1 {
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    border-bottom: 1px solid rgb(40, 40, 40);
+
+    overflow: hidden;
+}
+
+.nav-section2 {
+    background-color: rgb(20, 20, 20);
+    padding: 10px;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+.nav-section2 button {
+    border: 1px solid black;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.nav-section2 input {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-align {
+    float: right;
+}
+
+.nav-bar a:not([href*='index.html']) {
+    border-left: 1px solid rgb(40, 40, 40);
+    border-right: 1px solid rgb(40, 40, 40);
+}
+
+.nav-bar a {
+    padding: 5px 15px 5px 15px;
+    transition: 0.3s color;
+}
+
+.nav-bar a:hover {
+    color: rgb(204, 0, 0);
 }
