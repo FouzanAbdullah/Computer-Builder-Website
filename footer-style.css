@@ -1,20 +1,22 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer-container{
-    background-color: #212329;
-    padding: 4rem 0 2rem 0;
+.footer-container {
+    background-color: rgb(10, 10, 10);
+    border-top: 1px solid rgb(40, 40, 40);
+    margin-top: 50px;
+    padding: 4rem 0 0 0;
 
 }
 
-.footer{
+.footer {
     width: 80%;
     height: 35vh;
-    background-color: #212329;
+    background-color: rgb(10, 10, 10);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -22,28 +24,28 @@
     margin: 0 auto;
 }
 
-.footer-heading{
+.footer-heading {
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
 }
 
-.footer-heading h2{
+.footer-heading h2 {
     margin-bottom: 2rem;
 }
 
-.footer-heading a{
+.footer-heading a {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
 
-.footer-heading a:hover{
+.footer-heading a:hover {
     color: red;
     transition: 0.3s ease-out;
 }
 
-.footer-email-form h2{
+.footer-email-form h2 {
     margin-bottom: 2rem;
 }
 
@@ -59,48 +61,51 @@
 }
 
 #footer-email::placeholder {
-    color: #b1b1b1;
-
+    /* color: #b1b1b1; */
 }
 
-#footer-email-btn{
+#footer-email-btn {
     width: 100px;
     height: 40px;
     border-radius: 4px;
-    background-color: #F9423D;
+    background-color: #800000;
     outline: none;
-    border: none;
+    border: 1px solid black;
     color: #fff;
     font-size: 1rem;
-}
-
-#footer-email-btn:hover{
-    cursor: pointer;
-    background-color: #337af1;
     transition: all 0.4s ease-out;
 }
 
-@media screen and (max-width:1150px){
-    .footer{
+#footer-email-btn:hover {
+    /* cursor: pointer; */
+    background-color: #9b0000;
+    border: 1px solid #9b0000;
+
+}
+
+@media screen and (max-width:1150px) {
+    .footer {
         height: 50vh;
     }
-    .footer-email-form{
+
+    .footer-email-form {
         margin-top: 4rem;
     }
 }
 
-@media screen and (max-width:820px){
-    .footer{
+@media screen and (max-width:820px) {
+    .footer {
         padding-top: 2rem;
     }
 }
 
-@media screen and (max-width:720px){
-    .footer-3{
+@media screen and (max-width:720px) {
+    .footer-3 {
         display: none;
     }
-    .footer-email-form{
-        
+
+    .footer-email-form {
+
         margin-top: 2rem;
     }
 }

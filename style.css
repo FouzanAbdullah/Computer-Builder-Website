@@ -49,6 +49,7 @@ body {
         background-color: rgba(255, 0, 0, 0);
     }
 }
+
 p {
     padding: 2px;
     margin: 0px;
@@ -725,15 +726,26 @@ a.contact {
 }
 
 .nav-section2 button {
+    color: white;
+    background-color: #800000;
     border: 1px solid black;
     border-left: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 6px;
+    padding: 3px 6px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-section2 button:hover {
+    background-color: #9b0000;
+    border: 1px solid #9b0000;
 }
 
 .nav-section2 input {
     width: 250px;
     border: 1px solid black;
-    border-radius: 5px 0 0 5px;
+    border-radius: 6px;
+    padding: 3px;
+    margin: 0 6px;
 }
 
 .right-align {
