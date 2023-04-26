@@ -1,1 +1,0 @@
-- add price graph to details.html

@@ -780,7 +780,7 @@ a.contact {
 
 .home-feature img:hover {
     /* color: rgba(255, 255, 255, 1); */
-    box-shadow: 0px 0px 10px 4px #800000;
+    box-shadow: 0px 0px 10px 14x rgba(128, 0, 0);
 }
 
 .home-feature>div:first-child:hover,
@@ -827,12 +827,12 @@ a.contact {
 .home-sbs {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    margin-top: 50px;
 }
 
 .home-sbs .home-s1, .home-sbs .home-s2 {
     width: 35%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 
     color: rgb(215, 215, 215);
     background-color: rgba(35, 30, 30, 0.3);
@@ -841,9 +841,10 @@ a.contact {
 }
 
 .home-sbs h3 {
+    background-color: rgb(128, 0, 0);
     /* Required margin change */
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .home-s1 div {
@@ -878,11 +879,54 @@ a.contact {
     max-width: 100%;
 }
 
-.home-s2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.home-s2 iframe {
+    padding: 10px;
 }
 
-/*  */
+/* Latest Products */
+.home-latest {
+    color: white;
+    background-color: rgba(35, 30, 30, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(40, 40, 40);
+
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80vw;
+}
+
+.home-latest h3 {
+    background-color: rgb(128, 0, 0);
+    padding: 10px 0;
+}
+
+.latest-prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.latest-prod {
+    margin: 10px 20px;
+    padding: 15px;
+    border: 1px solid rgb(50, 50, 50);
+    /* border-radius: 5px; */
+    transition: 0.3s;
+}
+
+.latest-prod:hover {
+    background-color: rgba(70, 60, 60, 0.3);
+}
+
+.latest-prod p {
+    margin: 0;
+}
+
+#latest-prod-price {
+    font-size: 22px;
+}
+
+#latest-prod-oldprice {
+    color: gray;
+    text-decoration: line-through;
+}
