@@ -659,12 +659,12 @@ a.contact {
     color: #1c4a52;
 }
 
-.footer {
+/* .footer {
     width: 1000px;
     clear: both;
     height: 65px;
     background: url(src/footer_bg.gif) repeat-x top;
-}
+} */
 
 .left_footer {
     float: left;

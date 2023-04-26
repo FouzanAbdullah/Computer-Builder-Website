@@ -71,9 +71,10 @@ const footerHTML=`
 //   document.getElementsByTagName("BODY")[0].appendChild(footer);
 // }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.body.insertAdjacentHTML("afterbegin", navBarHtml);
-//   renderFooter();
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.insertAdjacentHTML("afterbegin", navBarHtml);
+  document.body.insertAdjacentHTML("afterend", footerHTML);
+  renderFooter();
+});
 
 
