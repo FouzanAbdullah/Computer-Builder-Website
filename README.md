@@ -1,6 +1,6 @@
 # Computer Builder Mock Website
 Mock application for a computer building website in COSC 3P94.
-Access [here](https://https://pcforgeworks.netlify.app).
+Access [here](https://pcforgeworks.netlify.app).
 
 ## Team Members
 | Name | Student Number|
