@@ -75,7 +75,7 @@ const footerHTML=`
 document.addEventListener("DOMContentLoaded", function () {
   document.body.insertAdjacentHTML("afterbegin", navBarHtml);
   document.body.insertAdjacentHTML("afterend", footerHTML);
-  renderFooter();
+  // renderFooter();
 });
 
 
