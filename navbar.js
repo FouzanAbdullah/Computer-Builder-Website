@@ -14,6 +14,7 @@ const navBarHtml = `
       <a href="build.html">PC Builder</a>
       <a href="featured.html">Featured Builds</a>
       <a href="#">Special Offers</a>
+      <a href="temp.html">temp.html</a>
       <!-- <a href="#" class="right-align">Put a search bar here</a> -->
       <button type="submit" class="right-align">Search</button>
       <input type="text" placeholder="Search for hardware..." class="right-align">
