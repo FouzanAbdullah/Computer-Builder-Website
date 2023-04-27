@@ -1123,3 +1123,49 @@ a.contact {
     border: 1px solid #b60000;
 }
 
+.user-reviews {
+    color: white;
+    background-color: rgba(35, 30, 30, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(40, 40, 40);
+
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.user-reviews h3 {
+    background-color: rgb(128, 0, 0);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.user-reviews: h4 {
+    margin: 0;
+}
+
+.user-reviews-container {
+    /* font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: rgba(50, 50, 50, 0.3);
+    border: 1px solid rgb(40, 40, 40); */
+}
+
+.per-user {
+    font-size: 18px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: rgba(50, 50, 50, 0.3);
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
