@@ -3,7 +3,7 @@ const navBarHtml = `
   <div class="nav-bar">
     <!-- Row 1 -->
     <div class="nav-section1">
-      <a href="index.html"><img src="src/companyname.png" alt="companyname" style="max-width: 300px;" /></a>
+      <a href="index.html" class="company-name"><img src="src/companyname.png" alt="companyname" /></a>
       <a href="login.html" class="right-align">Login</a>
       <a href="register.html" class="right-align">Sign Up</a>
       <a href="contact.html" class="right-align">Contact</a>

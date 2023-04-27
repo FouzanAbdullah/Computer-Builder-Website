@@ -1,97 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="data.js"></script>
-        <script type="text/javascript" src="navbar.js"></script>
-        <!-- <script type="text/javascript" src="renderNavbar.js"></script> -->
-        <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-        <link href="footer-style.css" rel="stylesheet">
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {		
-                loadDetail();
-            });
+<head>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
+    <!-- <script type="text/javascript" src="renderNavbar.js"></script> -->
+    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link href="footer-style.css" rel="stylesheet">
 
-            var loadDetail = function() {
-                var imageLocation = document.getElementById("mainImage");
-                var imageTitleLocation = document.getElementById("mainImageTitle");
-                var description = document.getElementById("desc");
-                var price = document.getElementById("price");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadDetail();
+        });
 
-                //get query parameter
-                let params = (new URL(document.location)).searchParams;
-                let id = params.get("id");
+        var loadDetail = function () {
+            var imageLocation = document.getElementById("mainImage");
+            var imageTitleLocation = document.getElementById("mainImageTitle");
+            var description = document.getElementById("desc");
+            var price = document.getElementById("price");
 
-                //get the object from url parameter from json data
-                var dataIn = JSON.stringify(data);
-                var jsonData = JSON.parse(dataIn);
-                var targetObject = "";
+            //get query parameter
+            let params = (new URL(document.location)).searchParams;
+            let id = params.get("id");
 
-                for (var i = 0; i < jsonData.length; i++) {
-                    if(id == jsonData[i].id) {
-                        targetObject = jsonData[i];
-                        break;
-                    }
+            //get the object from url parameter from json data
+            var dataIn = JSON.stringify(data);
+            var jsonData = JSON.parse(dataIn);
+            var targetObject = "";
+
+            for (var i = 0; i < jsonData.length; i++) {
+                if (id == jsonData[i].id) {
+                    targetObject = jsonData[i];
+                    break;
                 }
-
-                var image = document.createElement("IMG");
-                image.setAttribute("src", targetObject.image);
-                image.setAttribute("height", "200vh");
-                image.setAttribute("width", "200vw");
-                image.setAttribute("alt", targetObject.name);
-
-                var imageName = document.createElement("h1");
-                imageName.innerHTML = "<b class='label'>Name: </b>" + targetObject.name;
-                imageName.classList.add("text-white", "border-bottom");
-
-                var imageDescription = document.createElement("p");
-                imageDescription.innerHTML = "<b class='label'>Description: </b>" + targetObject.description;
-                imageDescription.classList.add("text-white", "border-bottom");
-
-                //if the sale price is not 0 or the same as the actual price then put sale
-                if(targetObject.price != targetObject.salePrice && targetObject.salePrice != 0) {
-                    var imageRealPrice = document.createElement("span");
-                    var imageSalePrice = document.createElement("span");
-                    imageRealPrice.classList.add("reduce");
-                    imageRealPrice.innerHTML = targetObject.price + "$";
-                    imageSalePrice.classList.add("price");
-                    imageSalePrice.innerHTML = " " + targetObject.salePrice + "$";
-                    price.appendChild(imageRealPrice);
-                    price.appendChild(imageSalePrice);
-                } else {  
-                    var imageRealPrice = document.createElement("span");
-                    imageRealPrice.innerHTML = "<b class='label'>Price: </b>" + targetObject.price + "$";
-                    imageRealPrice.classList.add("price");
-                    price.appendChild(imageRealPrice);
-                }
-
-                document.getElementById("brand").innerHTML = "<b class='label'>Brand: </b>" + targetObject.brand;
-
-                imageLocation.appendChild(image);
-                imageTitleLocation.appendChild(imageName);
-                description.appendChild(imageDescription);
-            }
-        </script>
-        <style>
-            .label {
-                font-size: 2cqw;
-                color: grey;
             }
 
-            #product {
-                margin-top: 15px;
-                margin-bottom: 15px;
+            var image = document.createElement("IMG");
+            image.setAttribute("src", targetObject.image);
+            image.setAttribute("height", "200vh");
+            image.setAttribute("width", "200vw");
+            image.setAttribute("alt", targetObject.name);
+
+            var imageName = document.createElement("h1");
+            imageName.innerHTML = "<b class='label'>Name: </b>" + targetObject.name;
+            imageName.classList.add("text-white", "border-bottom");
+
+            var imageDescription = document.createElement("p");
+            imageDescription.innerHTML = "<b class='label'>Description: </b>" + targetObject.description;
+            imageDescription.classList.add("text-white", "border-bottom");
+
+            //if the sale price is not 0 or the same as the actual price then put sale
+            if (targetObject.price != targetObject.salePrice && targetObject.salePrice != 0) {
+                var imageRealPrice = document.createElement("span");
+                var imageSalePrice = document.createElement("span");
+                imageRealPrice.classList.add("reduce");
+                imageRealPrice.innerHTML = targetObject.price + "$";
+                imageSalePrice.classList.add("price");
+                imageSalePrice.innerHTML = " " + targetObject.salePrice + "$";
+                price.appendChild(imageRealPrice);
+                price.appendChild(imageSalePrice);
+            } else {
+                var imageRealPrice = document.createElement("span");
+                imageRealPrice.innerHTML = "<b class='label'>Price: </b>" + targetObject.price + "$";
+                imageRealPrice.classList.add("price");
+                price.appendChild(imageRealPrice);
             }
-        </style>
-    </head>
-    <body>
-        <div id="product" class="container text-white">
+
+            document.getElementById("brand").innerHTML = "<b class='label'>Brand: </b>" + targetObject.brand;
+
+            imageLocation.appendChild(image);
+            imageTitleLocation.appendChild(imageName);
+            description.appendChild(imageDescription);
+        }
+    </script>
+    <style>
+        .label {
+            font-size: 2cqw;
+            color: grey;
+        }
+
+        #product {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="prod-details">
+        <div class="container-fluid">
             <div class="row">
-                <div id="mainImage" class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-md-5 prod-detail1">
+                    <img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png"/>
                 </div>
-                <div class="col-md-6 border rounded p-2">
+                <div class="col-md-7 prod-detail2">
+                    <h2>ASUS ROG MAXIMUS XI HERO (WI-FI) Desktop Motherboard</h2>
+                    <h5><strong>Manufacturer</strong>: ASUS Computer International</h5>
+                    <h5><strong>Product Description</strong>:</h5>
+                    <!-- Taken from: https://ithardwarehub.ca/asus-rog-rog-maximus-xi-hero-wi-fi/ -->
+                    <ul>
+                        <li>LGA1151 socket for 9th/8th -gen Intel® Core™ desktop processors</li>
+                        <li>Synchronized RGB lighting technology works with a vast portfolio of Aura Sync-capable PC gear and includes support for
+                        addressable light strips and Phillip Hue</li>
+                        <li>Perfected cooling with dedicated water header zones, M.2 heatsink and various fan control</li>
+                        <li>Gaming connectivity: Intel Gigabit Ethernet , LANGaurd, dual M.2, USB 3.1 Gen 2, Wi-Fi with MU-MI-MO 802.11</li>
+                        <li>5-way Optimization: Automated system-wide tuning, providing AI Overclocking and cooling profiles trailor-made for your
+                        rig</li>
+                        <li>Gaming Audio: SupremeFX and Sonic Studio III - High fidelity audio that draws you deeper into the action</li>
+                        <li>Gaming durability: ASUS SafeSlot and premium components for maximum durability</li>
+                    </ul>
+                    <p><span id="normal-price">$836.92</span> <strong id="sale-price">$669.53</strong></p>
+                    <div>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" style="width: 50px;">
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="product" class="container text-white">
+        <div class="row">
+            <div id="mainImage" class="col-md-6 d-flex align-items-center justify-content-center">
+            </div>
+            <div class="col-md-6 border rounded p-2">
                 <div id="mainImageTitle"></div>
                 <h4 class="border-bottom" id="brand">Brand</h4>
                 <div id="desc"></div>
@@ -101,71 +137,97 @@
                     <li>Power Consumption: 65 W</li>
                 </ul>
                 <div class="text-center" id="price"></div>
-                    <div class="text-center">
-                        <button class="btn btn-primary">Add to Cart</button>
-                    </div>
+                <div class="text-center">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
+    </div> -->
 
-        <div class="row">
-            <div class="p-5 col-12 bg-secondary border-top mt-3">
-                <h3>Feedback</h3>
+    <div class="user-reviews">
 
-                <div class="row mt-3">
-                    <div class="card col-8">
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
-                            </div>
-    
-                            <div class="col-3">
-                                <h5 class="card-title mt-4">Sample user 1 reviewer</h5>
-                            </div>
-                        </div>   
-                        
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">I like this item it works very well for me</li>
-                        </ul>
+    </div>
+
+    <div class="row">
+        <div class="p-5 col-12 bg-secondary border-top mt-3">
+            <h3>User Reviews</h3>
+
+            <div class="row mt-3">
+                <div class="card col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="card-img-top" src="src/usericon.jpg" alt="User pic"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                        <div class="col-3">
+                            <h5 class="card-title mt-4">Julian Ellis Geronimo</h5>
+                        </div>
                     </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">I like this item it works very well for me</li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="row mt-3">
-                    <div class="card col-8">
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
-                            </div>
-    
-                            <div class="col-3">
-                                <h5 class="card-title mt-4">Sample user 2 reviewer</h5>
-                            </div>
-                        </div>   
-                        
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">This item made my dog not like his food anymore</li>
-                        </ul>
+            <div class="row mt-3">
+                <div class="card col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="card-img-top" src="src/usericon.jpg" alt="User pic"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                        <div class="col-3">
+                            <h5 class="card-title mt-4">Ibrahim Hashmi</h5>
+                        </div>
                     </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">This item made my dog not like his food anymore</li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="row mt-3">
-                    <div class="card col-8">
-                        <div class="row">
-                            <div class="col-2">
-                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
-                            </div>
-    
-                            <div class="col-3">
-                                <h5 class="card-title mt-4">Sample user 3 reviewer</h5>
-                            </div>
-                        </div>   
-                        
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">I cannot decide whether I like it or not but it is okay.</li>
-                        </ul>
+            <div class="row mt-3">
+                <div class="card col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="card-img-top" src="src/usericon.jpg" alt="User pic"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                        <div class="col-3">
+                            <h5 class="card-title mt-4">Sample user 3 reviewer</h5>
+                        </div>
                     </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">I cannot decide whether I like it or not but it is okay.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="card col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="card-img-top" src="src/usericon.jpg" alt="User pic"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                        <div class="col-3">
+                            <h5 class="card-title mt-4">Sample user 3 reviewer</h5>
+                        </div>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">I cannot decide whether I like it or not but it is okay.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
