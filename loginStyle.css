@@ -7,9 +7,11 @@
 
 body {
     height: 100vh;
-    /* display: flex;*/
+    /* display: flex; */
     margin-top: 30%;
     margin-left: 30%;
+    /* margin-bottom: 30%; */
+    padding-bottom: 30%;
     align-items: center;
     justify-content: center;
 }
@@ -64,6 +66,7 @@ body {
 
 #mainPart {
     margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 #instruction {
