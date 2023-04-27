@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,164 +12,168 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
   <link href="footer-style.css" rel="stylesheet">
-  <style>
-    /* Style for motherboard list container */
-    #motherboard-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Style for motherboard container */
-    .motherboard {
-      display: flex;
-      flex-direction: column;
-      width: calc(33.33% - 10px);
-      margin-bottom: 20px;
-      padding: 10px;
-      box-shadow: 0px 2px 6px rgba(82, 56, 229, 0.3);
-      border-radius: 5px;
-    }
-
-    /* Style for motherboard image */
-    .motherboard-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    /* Style for motherboard description */
-    .motherboard-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      color:rgba(255, 255, 255, 0.3)
-    }
-
-    /* Style for motherboard title */
-    .motherboard-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    /* Style for motherboard price */
-    .motherboard-price {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    /* Style for Add to Cart button */
-    .add-to-cart {
-      background-color: #c41111;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      padding: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .add-to-cart:hover {
-      background-color: #3e8e41;
-    }
-
-    .item {
-      padding: 3px;
-      background-color: white;
-      border-radius: 5px;
-      margin-top: 8px;
-    }
-  </style>
-  
 </head>
+
 <body>
-  <main>
-    <div id="main_container">
-      <div class="col-12">
-        <div class="row">
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
+  <div class="listing">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 filter-box" style="padding: 0px;">
+          <h3>Filter</h3>
+          <div class="filter-form">
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" name="price-range" min="1" max="2500" step="1">
+            <output for="price-range" id="price-output"></output>
+            <br>
+            <label for="choice-select">Form Factor:</label>
+            <select id="choice-select" name="choice-select">
+              <option value="option1">All</option>
+              <option value="option1">ATX</option>
+              <option value="option2">Micro ATX</option>
+              <option value="option3">Mini ATX</option>
+            </select>
+            <label for="choice-select">Socket Type:</label>
+            <select id="choice-select" name="choice-select">
+              <option value="option1">All</option>
+              <option value="option1">LGA (Intel)</option>
+              <option value="option2">PGA (AMD)</option>
+              <option value="option3">BGA</option>
+              <option value="option3">TR4 (Threadripper)</option>
+              <option value="option3">SP3</option>
+            </select>
+            <label for="choice-select">Chipset:</label>
+            <select id="choice-select" name="choice-select">
+              <option value="option1">All</option>
+              <option value="option1">Intel</option>
+              <option value="option2">AMD</option>
+              <option value="option3">NVIDIA</option>
+              <option value="option3">VIA</option>
+              <option value="option3">SiS</option>
+            </select>
+            <label for="choice-select">Memory Type:</label>
+            <select id="choice-select" name="choice-select">
+              <option value="option1">All</option>
+              <option value="option1">DDR2</option>
+              <option value="option2">DDR3</option>
+              <option value="option3">DDR4</option>
+              <option value="option3">DDR5</option>
+            </select>
+            <button type="submit" class="apply-filters">Apply Filters</button>
           </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
-          </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
-          </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
-          </div>
+          
         </div>
 
-        <div class="row">
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">499$</span> <span class="price">449.99$</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
+        <div class="col-md-9 listing-container">
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong></p>
+            </a>
+            <button>Add to Cart</button>
           </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
           </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
           </div>
-
-          <div class="col-3">
-            <div class="col-12 item">
-              <div class="product_title"><a href="details.html?id=asusrogmaximus">ASUS ROG Maximus XIII Hero</a></div>
-              <div class="product_img"><a href="details.html?id=asusrogmaximus"><img src="src/asusmaximus.jpg" alt="" border="0" /></a></div>
-              <div class="prod_price"><span class="reduce">$499</span> <span class="price">$449.99</span></div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>     
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
           </div>
-        </div>    
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+          <div class="one-list">
+            <a href="details.html"><img alt="Bootstrap Image Preview" src="src/asusrogmaximus.png" />
+              <h5 style="text-align: left;">ASUS ROG MAXIMUS XI HERO</h5>
+              <p id="latest-prod-price" style="text-align: left;"><span id="latest-prod-oldprice">$836.92</span>
+                <strong>$669.53</strong>
+              </p>
+            </a>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
 </body>
 </html>
