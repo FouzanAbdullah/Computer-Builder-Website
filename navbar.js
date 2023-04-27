@@ -6,6 +6,7 @@ const navBarHtml = `
       <a href="index.html"><img src="src/companyname.png" alt="companyname" style="max-width: 300px;" /></a>
       <a href="login.html" class="right-align">Login</a>
       <a href="register.html" class="right-align">Sign Up</a>
+      <a href="contact.html" class="right-align">Contact</a>
     </div>
 
     <!-- Row 2 -->
@@ -37,7 +38,7 @@ const footerHTML=`
                 <h2>Contact Us</h2>
                 <a href="#">Careers</a>
                 <a href="#">Support</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
                 <a href="#">Sponsorships</a>
             </div>
             <div class="footer-heading footer-3">
@@ -57,24 +58,9 @@ const footerHTML=`
     </div>
 `;
 
-// var renderFooter = function () {
-//   var body = document.getElementsByTagName("BODY")[0];
-//   body.setAttribute("style", "height: auto; width: auto; min-height: 100%; min-height: 100vh; overflow-y: scroll; margin: 0; padding: 0;");
-
-//   var footer = document.createElement("footer");
-//   var p = document.createElement("p");
-//   p.classList.add("text-white", "text-center");
-//   p.setAttribute("style", "padding:1rem 1rem 0.5rem 0;margin: 0; position:fixed; bottom:0;right:0!important;justify-content: right;color:#555555 !important");
-//   p.innerHTML = "COSC 3P94 • Group 12 • &copy 2023";
-//   footer.appendChild(p);
-
-//   document.getElementsByTagName("BODY")[0].appendChild(footer);
-// }
-
 document.addEventListener("DOMContentLoaded", function () {
   document.body.insertAdjacentHTML("afterbegin", navBarHtml);
   document.body.insertAdjacentHTML("afterend", footerHTML);
-  // renderFooter();
 });
 
 
