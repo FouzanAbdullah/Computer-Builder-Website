@@ -60,10 +60,6 @@
     margin-bottom: 1rem;
 }
 
-#footer-email::placeholder {
-    /* color: #b1b1b1; */
-}
-
 #footer-email-btn {
     width: 100px;
     height: 40px;
