@@ -43,12 +43,12 @@
                 image.setAttribute("alt", targetObject.name);
 
                 var imageName = document.createElement("h1");
-                imageName.innerHTML = targetObject.name;
-                imageName.classList.add("text-white");
+                imageName.innerHTML = "<b class='label'>Name: </b>" + targetObject.name;
+                imageName.classList.add("text-white", "border-bottom");
 
                 var imageDescription = document.createElement("p");
-                imageDescription.innerHTML = targetObject.description;
-                imageDescription.classList.add("text-white");
+                imageDescription.innerHTML = "<b class='label'>Description: </b>" + targetObject.description;
+                imageDescription.classList.add("text-white", "border-bottom");
 
                 //if the sale price is not 0 or the same as the actual price then put sale
                 if(targetObject.price != targetObject.salePrice && targetObject.salePrice != 0) {
@@ -62,29 +62,48 @@
                     price.appendChild(imageSalePrice);
                 } else {  
                     var imageRealPrice = document.createElement("span");
-                    imageRealPrice.innerHTML = targetObject.price + "$";
+                    imageRealPrice.innerHTML = "<b class='label'>Price: </b>" + targetObject.price + "$";
                     imageRealPrice.classList.add("price");
                     price.appendChild(imageRealPrice);
                 }
+
+                document.getElementById("brand").innerHTML = "<b class='label'>Brand: </b>" + targetObject.brand;
 
                 imageLocation.appendChild(image);
                 imageTitleLocation.appendChild(imageName);
                 description.appendChild(imageDescription);
             }
         </script>
+        <style>
+            .label {
+                font-size: 2cqw;
+                color: grey;
+            }
+
+            #product {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        </style>
     </head>
     <body>
-        <div id="main_container">            
-            <div id="mainImage" class="text-center">
-            </div>
-
-            <div id="mainImageTitle" class="text-center">
-            </div>
-
-            <div id="mainImageDescription" class="text-left border rounded">
-                <div class="row">
-                    <div class="col-10" id="desc"></div>
-                    <div class="col-2" id="price"></div>
+        <div id="product" class="container text-white">
+            <div class="row">
+                <div id="mainImage" class="col-md-6 d-flex align-items-center justify-content-center">
+                </div>
+                <div class="col-md-6 border rounded">
+                <div id="mainImageTitle"></div>
+                <h4 class="border-bottom" id="brand">Brand</h4>
+                <div id="desc"></div>
+                <h4>Specifications:</h4>
+                <ul>
+                    <li>Gigahertz: 3.5 GHz</li>
+                    <li>Power Consumption: 65 W</li>
+                </ul>
+                <div class="text-center" id="price"></div>
+                    <div class="text-center">
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
