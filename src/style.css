@@ -689,7 +689,7 @@ ul.left_menu li.even a:hover, ul.left_menu li.odd a:hover {
     color: white;
     background-color: #800000;
     border: 1px solid black;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 6px 50px;
     margin: 6px 0;
     transition: all 0.3s ease-out;
