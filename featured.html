@@ -63,19 +63,19 @@
             }
 
             .add-to-cart {
-                background-color: #c41111;
                 color: white;
-                font-size: 14px;
-                font-weight: bold;
-                border: none;
-                border-radius: 5px;
-                padding: 10px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
+                background-color: #800000;
+                border: 1px solid black;
+                border-left: none;
+                border-radius: 6px;
+                padding: 6px 24px;
+                margin: 6px;
+                transition: all 0.3s ease-out;
             }
 
             .add-to-cart:hover {
-                background-color: #3e8e41;
+                background-color: #9b0000;
+                border: 1px solid #9b0000;
             }
 
             #main_container img {
@@ -86,13 +86,12 @@
                 padding-top: 10px;
                 aspect-ratio: 1/1;
             }
+            .card {
+                margin: 10px;
+            }
 
             .card:hover {
                 cursor: pointer;
-            }
-
-            .card {
-                margin: 8px;
             }
 
             label {
@@ -114,7 +113,7 @@
             }
 
             #main_container button {
-                margin-top: 16px;
+                margin-top: 18px;
             }
 
             .red-btn {
@@ -130,11 +129,11 @@
         </style>
     </head>
     <body>
-        <div id="main_container">
+        <div id="main_container" style="width: 80vw;">
             <div class="row">
                 <div class="col-3 text-center">
                     <div class="filter-box">
-                        <h1 class="text-center text-white">Filters</h1>
+                        <h2 class="text-center text-white">Filters</h2>
                         <div class="slider">
                             <input type="range" min="200" max="10000" value="100" oninput="rangeValue.innerText = this.value">
                         </div>
@@ -156,14 +155,6 @@
                             <option>Yes</option>
                             <option>No</option>
                         </select>
-                        <select id="case" name="case">
-                            <option disabled selected>Case</option>
-                            <option>Micro ATX</option>
-                            <option>ATX</option>
-                        </select>
-                        <label for="start text-white">Date created:</label>
-                        <input type="date" id="start" name="start">
-                        
                         <select id="gpu" name="gpu">
                             <option disabled selected>GPU</option>
                             <option>Nvidia</option>
@@ -171,13 +162,23 @@
                             <option>30 series</option>
                             <option>40 series</option>
                         </select>
-                        <button type="button" class="red-btn add-game btn btn-primary">Apply Filters</button>
+                        <select id="case" name="case">
+                            <option disabled selected>Case</option>
+                            <option>Micro ATX</option>
+                            <option>ATX</option>
+                        </select>
+                        <div style="display: flex; align-items: center;">
+                            <p style="margin: 0 0 0 6px;">Date Created:</p>
+                            <input type="date" id="start" name="start">
+                        </div>
+                        
+                        <button type="submit" class="apply-filters">Apply Filters</button>
                     </div>
                 </div>
                 <!-- end of left content -->
-                <div class="col-9">
+                <div class="col-9 featured-listing" style="margin-top: 42px;">
                     <div class="row">
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">AMD5 Upgrade</h5>
@@ -190,7 +191,7 @@
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-3.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">PC for gaming/homework</h5>
@@ -199,11 +200,11 @@
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">AMD Ryzen 7 3700X</li>
                             <li class="list-group-item">Radeon RX 6700 XT</li>
-                            <li class="list-group-item"><b>Cost: 2616.52$</b></li>
+                            <li class="list-group-item"><b>Cost: 2618.52$</b></li>
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-2.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">Quiet White AMD PC 2023</h5>
@@ -218,7 +219,7 @@
                         </div>  
                     </div>
                     <div class="row">
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">AMD5 Upgrade</h5>
@@ -231,7 +232,7 @@
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/my old setup.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">Nikola Tesla computer</h5>
@@ -244,7 +245,7 @@
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-2.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">Quiet White AMD PC 2023</h5>
@@ -259,7 +260,7 @@
                         </div>  
                     </div>
                     <div class="row">
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-1.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">AMD5 Upgrade</h5>
@@ -272,7 +273,7 @@
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-3.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">PC for gaming/homework</h5>
@@ -281,11 +282,11 @@
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">AMD Ryzen 7 3700X</li>
                             <li class="list-group-item">Radeon RX 6700 XT</li>
-                            <li class="list-group-item"><b>Cost: 2616.52$</b></li>
+                            <li class="list-group-item"><b>Cost: 2618.52$</b></li>
                             <button class="add-to-cart">Add to Cart</button>
                             </ul>
                         </div>
-                        <div class="card" style="width: 15rem;">
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="src/build-2.jpg" alt="Card image cap">
                             <div class="card-body">
                             <h5 class="card-title">Quiet White AMD PC 2023</h5>

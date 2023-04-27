@@ -63,7 +63,7 @@ h2 {
 
 
 #main_container {
-    /* width: 1100px; */
+    /* width: 1600px; */
     height: auto;
     margin: auto;
     padding: 0px;
@@ -736,8 +736,8 @@ a.contact {
 }
 
 .nav-section2 button:hover {
-    background-color: #9b0000;
-    border: 1px solid #9b0000;
+    background-color: #b60000;
+    border: 1px solid #b60000;
 }
 
 .nav-section2 input {
@@ -831,8 +831,8 @@ a.contact {
 }
 
 .home-feature button:hover {
-    background-color: #9b0000;
-    border: 1px solid #9b0000;
+    background-color: #b60000;
+    border: 1px solid #b60000;
 }
 
 /* Side by Side boxes */
@@ -1015,7 +1015,6 @@ a.contact {
     line-height: 1.7;
 }
 
-/* Show the text after 2 seconds on hover */
 .pc-component:hover .hidden {
     opacity: 1;
     transition-delay: 0.4s;
@@ -1025,3 +1024,38 @@ a.contact {
 .pc-component-text {
     color: rgb(255, 80, 80);
 }
+
+/* Featured Builds */
+.filter-box {
+    color: white;
+    background-color: rgba(35, 30, 30, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(40, 40, 40);
+
+    margin-top: 50px;
+}
+
+.filter-box h2 {
+    background-color: rgb(128, 0, 0);
+    margin-bottom: 12px;
+}
+
+.filter-box select {
+    margin: 6px;
+}
+
+.apply-filters {
+    color: white;
+    background-color: #800000;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 6px 24px;
+    margin: 6px;
+    transition: all 0.3s ease-out;
+}
+
+.apply-filters:hover {
+    background-color: #b60000;
+    border: 1px solid #b60000;
+}
+
