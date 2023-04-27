@@ -1,24 +1,21 @@
-<!--
-    Fouzan Abdullah: 6840797
-    Ibrahim Hashmi: 6352926
--->
 <html>
-  <title>Register</title>
 <head>
+  <title>Register</title>
   <meta name="viewport" content="width= device-width, initial-scale = 1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <script type="text/javascript" src="src/data.js"></script>
+  <script type="text/javascript" src="src/navbar.js"></script>
+  <!-- <script type="text/javascript" src="registerNavbar.js"></script> -->
+  <!-- <script type="text/javascript" src="renderNavbar.js"></script> -->
+  <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript" src="data.js"></script>
-<script type="text/javascript" src="navbar.js"></script>
-<!-- <script type="text/javascript" src="registerNavbar.js"></script> -->
-<!-- <script type="text/javascript" src="renderNavbar.js"></script> -->
-<script type="text/javascript" src="bootstrap.bundle.min.js"></script>
 
-
-<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-<link rel="stylesheet" href="loginStyle.css">
-<link rel="stylesheet" href="style.css">
-<link href="footer-style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="src/loginStyle.css">
+  <link rel="stylesheet" href="src/style.css">
+  <link href="src/footer-style.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="mainPart" class="text-center">
     <div class="login">
@@ -27,38 +24,39 @@
       <form>
 
         <div class="form-group">
-          <label class = "form-label">First Name</label>
-          <input class = "form-control" type="text" id="firstName">
+          <label class="form-label">First Name</label>
+          <input class="form-control" type="text" id="firstName">
         </div>
 
         <div class="form-group">
-          <label class = "form-label">Last Name</label>
-          <input class = "form-control" type="text" id="lastName">
+          <label class="form-label">Last Name</label>
+          <input class="form-control" type="text" id="lastName">
         </div>
 
         <div class="form-group">
-          <label class = "form-label" for="email">Email address</label>
-          <input class = "form-control" type="email" id="email">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-control" type="email" id="email">
         </div>
 
         <div class="form-group">
-          <label class = "form-label"  for="password">Password</label>
-          <input class = "form-control" type="password" id="password">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-control" type="password" id="password">
         </div>
 
         <div class="form-group">
-          <label class = "form-label"  for="password">Confirm Password</label>
-          <input class = "form-control" type="password" id="password">
+          <label class="form-label" for="password">Confirm Password</label>
+          <input class="form-control" type="password" id="password">
         </div>
 
-        <input class = "btn btn-success w-100" type="submit" value="Register">
+        <input class="btn btn-success w-100" type="submit" value="Register">
 
         <div id="register-link">
           <a href="login.html">Already have an account? Login here</a>
         </div>
-      
+
       </form>
     </div>
   </div>
 </body>
+
 </html>
