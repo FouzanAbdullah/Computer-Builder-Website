@@ -74,7 +74,8 @@
             .component-row {
                 border: 1px solid #000000;
                 border-radius: 5px;
-                background-color: rgba(40, 40, 40, 0.6);
+                background-color: rgba(35, 30, 30, 0.2);
+                backdrop-filter: blur(5px);
                 margin-bottom: 4px;
             }
 
@@ -88,8 +89,10 @@
             }
 
             .section {
-                border: 2px solid black;
-                background-color: rgba(40, 40, 40, 0.6);
+                border: 1px solid #000000;
+                border-radius: 5px;
+                background-color: rgba(35, 30, 30, 0.2);
+                backdrop-filter: blur(5px);
                 padding: 16px;
                 margin-bottom: 8px;
                 
@@ -117,7 +120,7 @@
         </style>
     </head>
     <body>
-        <div id="main_container">
+        <div id="main_container" style="width: 80vw;">
             <!-- header row to display username and load/save-->
             <div class="row">
                 <div class="col-7">
@@ -210,22 +213,21 @@
                 <div class="col-3">
                     <div class="section">
                         <h3 class="text-white text-center"><u>PC Build Status</u></h3>
-                        <h7 class="text-white">Estimated price: 567$</h7>
-                        <h7 class="text-white">Compatibility: <font color="green">No issues</font></h7>
-                        <h7 class="text-white">Estimated wattage: 120W</h7>
+                        <h7 class="text-white"><strong>Estimated Price</strong>: $567</h7>
+                        <h7 class="text-white"><strong>Compatibility</strong>: <span style="color:rgb(0, 255, 0)">No issues.</span></h7>
+                        <h7 class="text-white"><strong>Estimated Wattage</strong>: 120W</h7>
                     </div>
                     <div class="section">
                         <h3 class="text-white text-center"><u>Estimated Benchmarks</u></h3>
-                        <h7 class="text-white">Apex Legends: 130fps</h7>
-                        <h7 class="text-white">League of Legends: 193fps</h7>
-                        <h7 class="text-white">Valorant: 178fps</h7>
-                        <h7 class="text-white">CS:GO: 175fps</h7>
-                        <h7 class="text-white">Minecraft (Raytracing): 144fps</h7>
+                        <h7 class="text-white"><strong>Apex Legends</strong>: 130fps</h7>
+                        <h7 class="text-white"><strong>League of Legends</strong>: 193fps</h7>
+                        <h7 class="text-white"><strong>Valorant</strong>: 178fps</h7>
+                        <h7 class="text-white"><strong>CS:GO</strong>: 175fps</h7>
+                        <h7 class="text-white"><strong>Minecraft (Raytracing)</strong>: 144fps</h7>
                         <button type="button" class="red-btn add-game btn btn-primary">Add Game</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end of main_container -->
     </body>
 </html>
