@@ -13,9 +13,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: url(bg.jpg);
-    background-size: cover; */
-
 }
 
 .contact .content{
@@ -88,6 +85,7 @@
     width: 40%;
     padding: 40px;
     background: #fff;
+    border-radius: 10%;
 }
 
 .contactForm h2{
@@ -134,12 +132,16 @@
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background: #800000;
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    background: #9b0000;
 }
 
 @media (max-width: 991px){
