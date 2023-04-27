@@ -61,10 +61,10 @@
                     price.appendChild(imageRealPrice);
                     price.appendChild(imageSalePrice);
                 } else {  
-                    var imagePrice = document.createElement("p");
-                    imagePrice.innerHTML = targetObject.price;
-                    imagePrice.classList.add("text-white");
-                    price.appendChild(imagePrice);
+                    var imageRealPrice = document.createElement("span");
+                    imageRealPrice.innerHTML = targetObject.price + "$";
+                    imageRealPrice.classList.add("price");
+                    price.appendChild(imageRealPrice);
                 }
 
                 imageLocation.appendChild(image);
@@ -85,6 +85,66 @@
                 <div class="row">
                     <div class="col-10" id="desc"></div>
                     <div class="col-2" id="price"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 bg-secondary border-top mt-3">
+                <h3>Feedback</h3>
+
+                <div class="row border-top mt-3">
+                    <div class="card col-8">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
+                            </div>
+    
+                            <div class="col-3">
+                                <h5 class="card-title mt-4">Sample user 1 reviewer</h5>
+                            </div>
+                        </div>   
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">I like this item it works very well for me</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row border-top mt-3">
+                    <div class="card col-8">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
+                            </div>
+    
+                            <div class="col-3">
+                                <h5 class="card-title mt-4">Sample user 2 reviewer</h5>
+                            </div>
+                        </div>   
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">This item made my dog not like his food anymore</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row border-top mt-3">
+                    <div class="card col-8">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="card-img-top" src="src/usericon.jpg" alt="User pic" style="weight: 100px; width: 100px;">
+                            </div>
+    
+                            <div class="col-3">
+                                <h5 class="card-title mt-4">Sample user 3 reviewer</h5>
+                            </div>
+                        </div>   
+                        
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">I cannot decide whether I like it or not but it is okay.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
